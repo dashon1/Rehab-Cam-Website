@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "name": "Swiss Tech-Financial Series A",
+    "viewport": "1280x720",
+    "description": "International Typographic Style with Royal Blue and Tech Teal"
+  },
+  "colors": {
+    "primary": {
+      "main": "#0047AB",
+      "light": "#4D7BC7",
+      "dark": "#002F70",
+      "contrast": "#FFFFFF"
+    },
+    "accent": {
+      "main": "#00C2CB",
+      "light": "#E0F7F9",
+      "dark": "#008C94",
+      "contrast": "#000000"
+    },
+    "neutral": {
+      "black": "#111827",
+      "darkGray": "#374151",
+      "gray": "#6B7280",
+      "lightGray": "#E5E7EB",
+      "white": "#FFFFFF",
+      "background": "#FFFFFF",
+      "surface": "#F9FAFB"
+    },
+    "semantic": {
+      "success": "#00C2CB",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "info": "#0047AB"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "sans": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "mono": "'Roboto Mono', monospace"
+    },
+    "weights": {
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "bold": 700
+    },
+    "sizes": {
+      "display": "96px",
+      "h1": "72px",
+      "h2": "54px",
+      "h3": "36px",
+      "h4": "28px",
+      "bodyLarge": "28px",
+      "body": "24px",
+      "bodySmall": "22px",
+      "caption": "16px",
+      "label": "14px"
+    },
+    "lineHeights": {
+      "tight": 1.1,
+      "heading": 1.2,
+      "body": 1.5,
+      "bodyDense": 1.4
+    },
+    "letterSpacing": {
+      "tighter": "-0.02em",
+      "tight": "-0.01em",
+      "normal": "0em",
+      "wide": "0.05em"
+    }
+  },
+  "spacing": {
+    "xs": "8px",
+    "sm": "16px",
+    "md": "24px",
+    "lg": "32px",
+    "xl": "48px",
+    "xxl": "64px",
+    "xxxl": "80px",
+    "display": "120px"
+  },
+  "grid": {
+    "cols": 12,
+    "gutter": "20px",
+    "margin": {
+      "x": "80px",
+      "y": "60px"
+    },
+    "maxWidth": "1120px"
+  },
+  "borderRadius": {
+    "none": "0px",
+    "sm": "2px",
+    "full": "9999px"
+  },
+  "boxShadow": {
+    "none": "none",
+    "sm": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+    "md": "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+    "lg": "0 20px 40px -5px rgba(0, 0, 0, 0.15)"
+  },
+  "animation": {
+    "duration": {
+      "fast": "200ms",
+      "normal": "400ms",
+      "slow": "800ms"
+    },
+    "easing": {
+      "default": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "in": "cubic-bezier(0.4, 0, 1, 1)",
+      "out": "cubic-bezier(0, 0, 0.2, 1)"
+    }
+  }
+}

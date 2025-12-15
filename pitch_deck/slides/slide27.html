@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>Slide 27</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            width: 1280px; height: 720px; overflow: hidden; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #111827;
+        }
+        .slide-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 20px;
+            padding: 60px 80px;
+            height: 100%;
+        }
+        .header {
+            grid-column: 1 / 13;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #0047AB;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: 54px;
+            font-weight: 700;
+            color: #0047AB;
+        }
+        .streams-grid {
+            grid-column: 1 / 13;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+        .stream-card {
+            background-color: #F9FAFB;
+            padding: 30px;
+            border-left: 6px solid #0047AB;
+        }
+        .stream-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 15px;
+        }
+        .stream-percent {
+            font-size: 20px;
+            font-weight: 600;
+            color: #00C2CB;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .stream-desc {
+            font-size: 18px;
+            color: #6B7280;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Revenue Streams</h2>
+        </div>
+        <div class="streams-grid">
+            <div class="stream-card">
+                <div class="stream-title">SaaS Subscriptions</div>
+                <div class="stream-percent">70% of Revenue</div>
+                <div class="stream-desc">Recurring revenue from Pro and Team plans. High margin, predictable cash flow.</div>
+            </div>
+            <div class="stream-card" style="border-left-color: #00C2CB;">
+                <div class="stream-title">Transaction Fees</div>
+                <div class="stream-percent">20% of Revenue</div>
+                <div class="stream-desc">Take-rate on funded loans originated through lender packet submissions.</div>
+            </div>
+            <div class="stream-card" style="border-left-color: #6B7280;">
+                <div class="stream-title">Enterprise API</div>
+                <div class="stream-percent">10% of Revenue</div>
+                <div class="stream-desc">Licensing cost data and AR engine to large institutional aggregators.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

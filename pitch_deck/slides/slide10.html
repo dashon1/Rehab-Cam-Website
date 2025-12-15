@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>Slide 10</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            width: 1280px; height: 720px; overflow: hidden; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #111827;
+        }
+        .slide-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 20px;
+            padding: 60px 80px;
+            height: 100%;
+        }
+        .header {
+            grid-column: 1 / 13;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #0047AB;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: 54px;
+            font-weight: 700;
+            color: #0047AB;
+        }
+        .segments-grid {
+            grid-column: 1 / 13;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 30px;
+        }
+        .segment-card {
+            background-color: #F9FAFB;
+            padding: 30px;
+            border-left: 6px solid #0047AB;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .segment-card:nth-child(2), .segment-card:nth-child(3) {
+            border-left-color: #00C2CB;
+        }
+        .segment-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+        .segment-stat {
+            font-size: 32px;
+            font-weight: 700;
+            color: #0047AB;
+            margin-bottom: 10px;
+        }
+        .segment-desc {
+            font-size: 18px;
+            color: #6B7280;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Four High-Value Customer Segments</h2>
+        </div>
+        <div class="segments-grid">
+            <div class="segment-card">
+                <div class="segment-title">House Flippers</div>
+                <div class="segment-stat">297,885 Flips/Yr</div>
+                <div class="segment-desc">Primary user. Needs speed and accuracy to maximize thin margins.</div>
+            </div>
+            <div class="segment-card">
+                <div class="segment-title">Real Estate Investors</div>
+                <div class="segment-stat">$615B Volume</div>
+                <div class="segment-desc">Buy-and-hold/BRRRR investors needing due diligence tools.</div>
+            </div>
+            <div class="segment-card">
+                <div class="segment-title">General Contractors</div>
+                <div class="segment-stat">919k Establishments</div>
+                <div class="segment-desc">Need clear scopes to reduce bid time and project disputes.</div>
+            </div>
+            <div class="segment-card">
+                <div class="segment-title">Property Managers</div>
+                <div class="segment-stat">$120B Industry</div>
+                <div class="segment-desc">Use for turns, maintenance inspections, and owner reporting.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

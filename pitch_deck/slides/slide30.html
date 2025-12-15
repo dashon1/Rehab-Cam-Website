@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>Slide 30</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            width: 1280px; height: 720px; overflow: hidden; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #111827;
+        }
+        .slide-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 20px;
+            padding: 60px 80px;
+            height: 100%;
+        }
+        .header {
+            grid-column: 1 / 13;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #0047AB;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: 54px;
+            font-weight: 700;
+            color: #0047AB;
+        }
+        .ask-container {
+            grid-column: 1 / 6;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .ask-amount {
+            font-size: 120px;
+            font-weight: 700;
+            color: #0047AB;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+        .ask-label {
+            font-size: 32px;
+            color: #111827;
+            margin-bottom: 40px;
+        }
+        .contact-info {
+            font-size: 22px; /* Increased per feedback */
+            color: #6B7280;
+            line-height: 1.5;
+        }
+        
+        .chart-container {
+            grid-column: 7 / 13;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px; /* Space between chart and legend */
+        }
+        /* CSS Pie Chart */
+        .pie-chart {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            flex-shrink: 0; /* Prevent shrinking */
+            background: conic-gradient(
+                #0047AB 0% 40%,    /* Product */
+                #00C2CB 40% 70%,   /* Sales */
+                #4D7BC7 70% 90%,   /* Ops */
+                #E5E7EB 90% 100%   /* Legal */
+            );
+        }
+        .legend {
+            /* Removed absolute positioning */
+            background: rgba(255,255,255,0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .dot { width: 16px; height: 16px; border-radius: 4px; margin-right: 12px; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Investment Ask</h2>
+        </div>
+        <div class="ask-container">
+            <div class="ask-amount">$5M</div>
+            <div class="ask-label">Series A Financing</div>
+            <div class="contact-info">
+                <strong>Contact:</strong> Sarah Jenkins<br>
+                sarah@rehab-e-cam.com<br>
+                (555) 123-4567
+            </div>
+        </div>
+        <div class="chart-container">
+            <div class="pie-chart"></div>
+            <div class="legend">
+                <div class="legend-item"><div class="dot" style="background: #0047AB;"></div>Product Dev (40%)</div>
+                <div class="legend-item"><div class="dot" style="background: #00C2CB;"></div>Sales & Mktg (30%)</div>
+                <div class="legend-item"><div class="dot" style="background: #4D7BC7;"></div>Operations (20%)</div>
+                <div class="legend-item"><div class="dot" style="background: #E5E7EB;"></div>Legal/G&A (10%)</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

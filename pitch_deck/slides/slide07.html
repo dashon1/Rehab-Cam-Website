@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>Slide 7</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            width: 1280px; height: 720px; overflow: hidden; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #111827;
+        }
+        .slide-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 20px;
+            padding: 60px 80px;
+            height: 100%;
+        }
+        .header {
+            grid-column: 1 / 13;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #0047AB;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: 54px;
+            font-weight: 700;
+            color: #0047AB;
+        }
+        .steps-container {
+            grid-column: 1 / 13;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .step-card {
+            background-color: #F9FAFB;
+            padding: 30px 20px;
+            border-radius: 8px;
+            position: relative;
+            text-align: center;
+            border-top: 4px solid #00C2CB;
+        }
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background-color: #0047AB;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0 auto 20px;
+        }
+        .step-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #111827;
+        }
+        .step-desc {
+            font-size: 16px;
+            color: #6B7280;
+            line-height: 1.4;
+        }
+        .arrow {
+            position: absolute;
+            right: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #D1D5DB;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>From Walkthrough to Funded Deal in Minutes</h2>
+        </div>
+        <div class="steps-container">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <div class="step-title">AR Walkthrough</div>
+                <div class="step-desc">Scan property with Live X-Ray to capture condition and costs.</div>
+                <div class="arrow">→</div>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <div class="step-title">Scope Generation</div>
+                <div class="step-desc">Automatically create a detailed, line-item Scope of Work.</div>
+                <div class="arrow">→</div>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <div class="step-title">Deal Analysis</div>
+                <div class="step-desc">Calculate Max Allowable Offer based on real rehab costs.</div>
+                <div class="arrow">→</div>
+            </div>
+            <div class="step-card">
+                <div class="step-number">4</div>
+                <div class="step-title">Lender Packet</div>
+                <div class="step-desc">One-click export of financing docs for immediate approval.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -19,42 +19,42 @@
         "id": "3",
         "content": "Design visual identity and branding system",
         "details": "1. Create brand guidelines for AI Microtech Link powered Rehab-E-Cam 2. Design pitch deck templates and visual style 3. Create website landing page design system 4. Develop video storyboards and visual concepts",
-        "status": "in_progress",
+        "status": "completed",
         "priority": "medium"
       },
       "4": {
         "id": "4",
         "content": "Develop 30-page pitch deck",
         "details": "1. Create compelling presentation covering problem, solution, market, technology, financials 2. Include app screenshots and feature demonstrations 3. Design professional slides with consistent branding 4. Structure for investor/stakeholder audiences",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       },
       "5": {
         "id": "5",
         "content": "Create website landing page with app redirect",
         "details": "1. Design informative landing page about the app 2. Include features, benefits, and social proof 3. Create clear call-to-action to redirect to actual app 4. Implement responsive design and optimization",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       },
       "6": {
         "id": "6",
         "content": "Generate 5 mini videos for social media",
         "details": "1. Create video scripts highlighting key features 2. Generate videos showing app functionality 3. Optimize for different social platforms 4. Include call-to-action elements",
-        "status": "pending",
+        "status": "completed",
         "priority": "medium"
       },
       "7": {
         "id": "7",
         "content": "Write comprehensive blog content",
         "details": "1. Create SEO-optimized blog posts about real estate tech 2. Feature app benefits and use cases 3. Include industry insights and trends 4. Optimize for lead generation",
-        "status": "pending",
+        "status": "completed",
         "priority": "medium"
       },
       "8": {
         "id": "8",
         "content": "Create YouTube social posts and content",
         "details": "1. Design social media posts for various platforms 2. Create content calendar and posting strategy 3. Develop hashtag strategies and engagement tactics 4. Include visual assets and copy",
-        "status": "pending",
+        "status": "completed",
         "priority": "medium"
       }
     }

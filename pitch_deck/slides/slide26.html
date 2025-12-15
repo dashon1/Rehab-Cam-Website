@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>Slide 26</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            width: 1280px; height: 720px; overflow: hidden; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #111827;
+        }
+        .slide-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 20px;
+            padding: 60px 80px;
+            height: 100%;
+        }
+        .header {
+            grid-column: 1 / 13;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #0047AB;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: 54px;
+            font-weight: 700;
+            color: #0047AB;
+        }
+        .chart-area {
+            grid-column: 1 / 9;
+            display: flex;
+            align-items: flex-end;
+            gap: 40px;
+            border-bottom: 2px solid #E5E7EB;
+            height: 400px;
+            padding-bottom: 20px;
+        }
+        .bar-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+        }
+        .bar {
+            width: 60%;
+            background-color: #0047AB;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+        .label {
+            font-weight: bold;
+            font-size: 20px;
+            color: #374151;
+        }
+        .value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0047AB;
+            margin-bottom: 10px;
+        }
+        .key-metrics {
+            grid-column: 10 / 13;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+        }
+        .km-box h3 {
+            font-size: 48px;
+            color: #00C2CB;
+            margin-bottom: 5px;
+        }
+        .km-box p {
+            font-size: 18px;
+            color: #6B7280;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Path to $100M ARR</h2>
+        </div>
+        <div class="chart-area">
+            <div class="bar-group">
+                <div class="value">$500K</div>
+                <div class="bar" style="height: 10%;"></div>
+                <div class="label">Year 1</div>
+            </div>
+            <div class="bar-group">
+                <div class="value">$5M</div>
+                <div class="bar" style="height: 30%;"></div>
+                <div class="label">Year 2</div>
+            </div>
+            <div class="bar-group">
+                <div class="value">$25M</div>
+                <div class="bar" style="height: 60%;"></div>
+                <div class="label">Year 3</div>
+            </div>
+            <div class="bar-group">
+                <div class="value">$100M</div>
+                <div class="bar" style="height: 100%; background-color: #00C2CB;"></div>
+                <div class="label">Year 4</div>
+            </div>
+        </div>
+        <div class="key-metrics">
+            <div class="km-box">
+                <h3>300%</h3>
+                <p>YoY Growth Target</p>
+            </div>
+            <div class="km-box">
+                <h3>85%</h3>
+                <p>Gross Margins</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

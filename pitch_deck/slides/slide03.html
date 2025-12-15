@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>Slide 3</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            width: 1280px; height: 720px; overflow: hidden; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #111827;
+        }
+        .slide-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 20px;
+            padding: 60px 80px;
+            height: 100%;
+        }
+        .header {
+            grid-column: 1 / 13;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #0047AB;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: 54px;
+            font-weight: 700;
+            color: #0047AB;
+        }
+        .chart-area {
+            grid-column: 1 / 8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .metrics-area {
+            grid-column: 9 / 13;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+        }
+        .metric {
+            border-left: 4px solid #00C2CB;
+            padding-left: 20px;
+        }
+        .metric-value {
+            font-size: 64px;
+            font-weight: 700;
+            color: #111827;
+        }
+        .metric-label {
+            font-size: 18px;
+            color: #6B7280;
+            margin-top: 5px;
+        }
+        /* Simple CSS Bar Chart */
+        .bar-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+        }
+        .bar-group {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .bar-label {
+            width: 150px;
+            font-size: 18px;
+            text-align: right;
+            color: #374151;
+        }
+        .bar {
+            height: 40px;
+            background-color: #0047AB;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            color: white;
+            font-weight: bold;
+        }
+        .bar.highlight {
+            background-color: #00C2CB;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Every Day Counts in House Flipping</h2>
+        </div>
+        <div class="chart-area">
+            <h3 style="font-size: 24px; color: #374151; margin-bottom: 30px;">Hard Money Interest Impact (12-15%)</h3>
+            <div class="bar-chart">
+                <div class="bar-group">
+                    <div class="bar-label">Day 1</div>
+                    <div class="bar" style="width: 10%;">Start</div>
+                </div>
+                <div class="bar-group">
+                    <div class="bar-label">Day 30</div>
+                    <div class="bar" style="width: 25%;">$1,500</div>
+                </div>
+                <div class="bar-group">
+                    <div class="bar-label">Day 90</div>
+                    <div class="bar" style="width: 50%;">$4,500</div>
+                </div>
+                <div class="bar-group">
+                    <div class="bar-label">Day 162 (Avg)</div>
+                    <div class="bar highlight" style="width: 85%;">$8,100+ Cost</div>
+                </div>
+            </div>
+            <p style="margin-top: 30px; font-size: 16px; color: #6B7280;">*Based on $150k loan at 12% interest</p>
+        </div>
+        <div class="metrics-area">
+            <div class="metric">
+                <div class="metric-value">162 Days</div>
+                <div class="metric-label">Average Flip Duration<br>(ATTOM Data, 2024)</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">63.2%</div>
+                <div class="metric-label">Cash Purchases<br>(Speed is Critical)</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">$2,000+</div>
+                <div class="metric-label">Monthly Holding Costs<br>(Avg per property)</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>Slide 20</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            width: 1280px; height: 720px; overflow: hidden; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #111827;
+        }
+        .slide-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 20px;
+            padding: 60px 80px;
+            height: 100%;
+        }
+        .header {
+            grid-column: 1 / 13;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #0047AB;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: 54px;
+            font-weight: 700;
+            color: #0047AB;
+        }
+        .eco-layout {
+            grid-column: 1 / 13;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 480px;
+        }
+        .center-hub {
+            width: 200px;
+            height: 200px;
+            background-color: #0047AB;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            box-shadow: 0 10px 30px rgba(0, 71, 171, 0.3);
+        }
+        .center-logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .satellite {
+            width: 140px;
+            height: 140px;
+            background-color: white;
+            border: 2px solid #E5E7EB;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: absolute;
+            font-size: 16px;
+            font-weight: 600;
+            color: #374151;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .orbit {
+            width: 500px;
+            height: 500px;
+            border: 2px dashed #D1D5DB;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Works With Your Existing Tools</h2>
+        </div>
+        <div class="eco-layout">
+            <div class="orbit"></div>
+            <div class="center-hub">
+                <div class="center-logo">Rehab-E-Cam</div>
+                <div style="font-size: 14px;">Field OS</div>
+            </div>
+            
+            <div class="satellite" style="transform: translate(0, -250px);">MLS Data<br>(Imports)</div>
+            <div class="satellite" style="transform: translate(216px, -125px);">Lender Portals<br>(Exports)</div>
+            <div class="satellite" style="transform: translate(216px, 125px);">Contractor Tools<br>(Procore/STACK)</div>
+            <div class="satellite" style="transform: translate(0, 250px);">CRMs<br>(Salesforce)</div>
+            <div class="satellite" style="transform: translate(-216px, 125px);">Accounting<br>(QuickBooks)</div>
+            <div class="satellite" style="transform: translate(-216px, -125px);">Property Mgmt<br>(Buildium)</div>
+        </div>
+    </div>
+</body>
+</html>

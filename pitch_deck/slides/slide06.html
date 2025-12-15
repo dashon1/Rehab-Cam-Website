@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>Slide 6</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            width: 1280px; height: 720px; overflow: hidden; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #111827;
+        }
+        .slide-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 20px;
+            padding: 60px 80px;
+            height: 100%;
+        }
+        .header {
+            grid-column: 1 / 13;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #0047AB;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: 54px;
+            font-weight: 700;
+            color: #0047AB;
+        }
+        .demo-image {
+            grid-column: 1 / 9;
+            height: 480px;
+            background-color: #F3F4F6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+        .demo-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .features {
+            grid-column: 9 / 13;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            padding-left: 20px;
+        }
+        .feature-box {
+            border-left: 4px solid #00C2CB;
+            padding-left: 15px;
+        }
+        .feature-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 5px;
+        }
+        .feature-text {
+            font-size: 16px;
+            color: #6B7280;
+            line-height: 1.4;
+        }
+        .overlay-tag {
+            position: absolute;
+            background: rgba(0, 71, 171, 0.9);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>See Pricing While You Walk</h2>
+        </div>
+        <div class="demo-image">
+            <img src="images/xray.png" alt="Live X-Ray Demo">
+            <div class="overlay-tag">Kitchen Upgrade: $12,500</div>
+        </div>
+        <div class="features">
+            <div class="feature-box">
+                <div class="feature-title">Real-Time Cost Overlays</div>
+                <div class="feature-text">AR camera instantly recognizes elements and projects renovation costs on screen.</div>
+            </div>
+            <div class="feature-box">
+                <div class="feature-title">Voice-Assisted Input</div>
+                <div class="feature-text">"Replace cabinets, add granite countertops" - simply speak to add line items.</div>
+            </div>
+            <div class="feature-box">
+                <div class="feature-title">Auto-Documentation</div>
+                <div class="feature-text">Every view is captured, categorized by room, and added to the project file.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
