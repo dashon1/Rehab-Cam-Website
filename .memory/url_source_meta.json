@@ -1,0 +1,214 @@
+{
+  "_source_id": 29,
+  "sources": {
+    "AI-Powered Real Estate Technology Trends": {
+      "https://creti.org/insights/ai-powered-proptech-venture-capital-investment-trends-in-2024": {
+        "id": 1,
+        "publisher": "CRETI",
+        "url": "https://creti.org/insights/ai-powered-proptech-venture-capital-investment-trends-in-2024",
+        "title": "AI-Powered PropTech Venture Capital Investment Trends in 2024",
+        "info": "VC investments in AI-powered PropTech reached $3.2B in 2024, with key focus areas including scalability, sustainability, and cross-sector applications. US led with $2B+ investments."
+      },
+      "https://spark.jllt.com/resources/blog/featured-research-the-future-of-ai-in-proptech-where-demand-is-creating-investment-opportunity/": {
+        "id": 2,
+        "publisher": "JLL Spark",
+        "url": "https://spark.jllt.com/resources/blog/featured-research-the-future-of-ai-in-proptech-where-demand-is-creating-investment-opportunity/",
+        "title": "The Future of AI in PropTech - Where Demand is Creating Investment Opportunity",
+        "info": "90.1% of companies plan to integrate AI in corporate real estate functions. 61% are piloting AI use cases. 700 out of 7,000 PropTech companies offer AI-powered solutions."
+      },
+      "https://www.crata-ai.com/post/computer-vision-future-construction-real-estate": {
+        "id": 3,
+        "publisher": "Crata AI",
+        "url": "https://www.crata-ai.com/post/computer-vision-future-construction-real-estate",
+        "title": "AI & Computer Vision: Future of Construction & Real Estate",
+        "info": "Computer vision market in real estate/construction is $20B with 19% growth. Applications include site monitoring, safety, equipment tracking, and property valuation."
+      },
+      "https://program-ace.com/blog/virtual-reality-for-real-estate/": {
+        "id": 4,
+        "publisher": "Program-Ace",
+        "url": "https://program-ace.com/blog/virtual-reality-for-real-estate/",
+        "title": "Virtual Reality for Real Estate in 2025 — The Essentials",
+        "info": "VR real estate market growing from $28B (2021) to $250B (2028). 1.4 million realtors expected to use VR by 2025. Key applications include virtual tours, staging, and architectural visualization."
+      },
+      "https://t2d2.ai/": {
+        "id": 5,
+        "publisher": "T2D2",
+        "url": "https://t2d2.ai/",
+        "title": "T2D2 AI Building Inspection Platform",
+        "info": "AI building inspection software using computer vision for automated damage detection. Provides cloud-based inspection portal, AI damage detector, drone provider network, and mobile inspection capabilities."
+      },
+      "https://www.inaza.com/inaza-central/property-damage-assessment": {
+        "id": 6,
+        "publisher": "Inaza",
+        "url": "https://www.inaza.com/inaza-central/property-damage-assessment",
+        "title": "Property Damage Assessment AI Solution",
+        "info": "AI-powered property damage assessment solution analyzing photos to identify and classify structural, interior, and exterior damage with instant cost estimation. Reports show 60% of property claims require additional inspections due to manual assessment limitations."
+      },
+      "https://www.v7labs.com/blog/best-ai-tools-for-real-estate": {
+        "id": 7,
+        "publisher": "V7 Labs",
+        "url": "https://www.v7labs.com/blog/best-ai-tools-for-real-estate",
+        "title": "The Best AI Tools for Real Estate: A 2025 Field Guide",
+        "info": "Comprehensive guide to AI tools in real estate including automated valuation models, property management automation, and computer vision applications. Real estate AI market projected to reach $1.3 trillion by 2034."
+      },
+      "https://www.morganstanley.com/insights/articles/ai-in-real-estate-2025": {
+        "id": 8,
+        "publisher": "Morgan Stanley",
+        "url": "https://www.morganstanley.com/insights/articles/ai-in-real-estate-2025",
+        "title": "How AI Is Reshaping Real Estate",
+        "info": "Analysis of AI impact on real estate showing $34 billion efficiency gains potential by 2030. 37% of real estate tasks can be automated, with brokers services sector seeing 34% increase in operating cash flow."
+      },
+      "https://neuroject.com/construction-ai-companies/": {
+        "id": 9,
+        "publisher": "Neuroject",
+        "url": "https://neuroject.com/construction-ai-companies/",
+        "title": "Top 20 Construction AI Companies; 2024 Review",
+        "info": "Construction AI market reached $62B in 2024 with 25% growth. 75% of construction professionals acknowledge AI as pivotal for project delivery. Future trends include smart construction sites, sustainable construction, and AI-driven predictive analytics."
+      },
+      "https://www.mordorintelligence.com/industry-reports/proptech-market": {
+        "id": 10,
+        "publisher": "Mordor Intelligence",
+        "url": "https://www.mordorintelligence.com/industry-reports/proptech-market",
+        "title": "PropTech Market Size, Share, Trends & Industry Growth Report, 2030",
+        "info": "PropTech market size: $36.55B (2024) growing to $88.37B (2032) at 13.25% CAGR. Global market valued at $47.08B (2025) expected to reach $185.31B by 2034."
+      }
+    },
+    "Rehab-E-Cam Target Audience Analysis": {
+      "https://www.pwc.com/gx/en/asset-management/emerging-trends-real-estate/assets/uli-emerging-trends-global-report-2024.pdf": {
+        "id": 11,
+        "publisher": "PwC/ULI",
+        "url": "https://www.pwc.com/gx/en/asset-management/emerging-trends-real-estate/assets/uli-emerging-trends-global-report-2024.pdf",
+        "title": "Emerging Trends in Real Estate: 2024 Global Outlook",
+        "info": "Comprehensive data on real estate investor demographics, market size, pain points, behavior patterns, decision-making factors, and investment preferences. Key findings: 59% of investors have net-zero targets, transaction activity lowest since 2012, challenges with higher interest rates, ESG implementation, and partnership management."
+      },
+      "https://www.attomdata.com/news/most-recent/2024-year-end-home-flipping-report/": {
+        "id": 12,
+        "publisher": "ATTOM Data",
+        "url": "https://www.attomdata.com/news/most-recent/2024-year-end-home-flipping-report/",
+        "title": "2024 Year-End Home Flipping Report",
+        "info": "Home flipping market statistics for 2024 showing 297,885 total flips, 7.6% of sales, 29.6% average ROI, $72,000 median profit. Demographics: Average flipper income $117,372, 63.2% cash purchases, challenges with short supply and elevated rates."
+      },
+      "https://www.bigrentz.com/blog/construction-statistics": {
+        "id": 13,
+        "publisher": "BigRentz",
+        "url": "https://www.bigrentz.com/blog/construction-statistics",
+        "title": "73 Must-Know Construction Statistics (2024)",
+        "info": "Construction industry demographics: 11.8M employees, 34% Latino/Hispanic, 54.6% aged 42-61, 10.8% women. Pain points: 95% product shortages, 62% skilled labor shortages, 97% material cost impacts. Market size: $2.1B construction spending."
+      },
+      "https://resimpli.com/blog/property-management-statistics/": {
+        "id": 14,
+        "publisher": "REsimpli",
+        "url": "https://resimpli.com/blog/property-management-statistics/",
+        "title": "75+ Property Management Statistics: Digital Revolution in 2025",
+        "info": "Property management market data: 81.52B USD market size by 2025, 910,000 employees, 59.5% women, 59.4M millennials as renters. Challenges: 39% spend 20+ hours monthly on maintenance, 24% increase in evictions. Technology adoption: 65% use AI tools, 85% believe technology critical."
+      },
+      "https://resimpli.com/blog/house-flipping-statistics/": {
+        "id": 15,
+        "publisher": "REsimpli",
+        "url": "https://resimpli.com/blog/house-flipping-statistics/",
+        "title": "240+ House Flipping Statistics: Profits & Pitfalls Revealed (2025)",
+        "info": "House flipping statistics showing market decline, profit margins, and flipper characteristics. Success rate 88%, average profit $40,836, 63.8% cash purchases, 11.2% FHA buyers. Regional performance varies significantly."
+      },
+      "https://www.morganstanley.com/im/en-us/individual-investor/insights/articles/aging-population-real-estate-outlook.html": {
+        "id": 16,
+        "publisher": "Morgan Stanley",
+        "url": "https://www.morganstanley.com/im/en-us/individual-investor/insights/articles/aging-population-real-estate-outlook.html",
+        "title": "Real Estate Outlook 2024: Aging Population Impact on Housing",
+        "info": "Housing market trends showing aging population impact on real estate investment. Millennial and Baby Boomer preferences differ significantly. First-time homebuyers median age reached 36 in 2020, up from 33 in 2019."
+      },
+      "https://thedigitalprojectmanager.com/tools/best-construction-project-management-software/": {
+        "id": 17,
+        "publisher": "The Digital Project Manager",
+        "url": "https://thedigitalprojectmanager.com/tools/best-construction-project-management-software/",
+        "title": "34 Best Construction Project Management Software For 2025",
+        "info": "Construction management software platforms and contractor technology preferences. Top tools include Procore, Contractor Foreman, Viewpoint Team, Autodesk Construction Cloud. Focus on mobile-first solutions and project management features."
+      },
+      "https://www.appfolio.com/blog/best-property-management-softwares-compared-2025": {
+        "id": 18,
+        "publisher": "AppFolio",
+        "url": "https://www.appfolio.com/blog/best-property-management-softwares-compared-2025",
+        "title": "Best Property Management Software 2025: Top 6 Companies",
+        "info": "Property management technology trends and software preferences. Leading platforms include AppFolio, Yardi, Entrata, MRI Software. Focus on AI-powered automation, mobile-first design, and unified platforms."
+      }
+    },
+    "Rehab-E-Cam Competitor Analysis": {
+      "https://www.propertyradar.com/pricing": {
+        "id": 19,
+        "publisher": "PropertyRadar",
+        "url": "https://www.propertyradar.com/pricing",
+        "title": "PropertyRadar Pricing and Plans",
+        "info": "Solo plan at $119/month for 1 user, Team plan at $249/month for 3 users, Business plan at $599/month. Offers comprehensive property and owner data for real estate investors and professionals."
+      },
+      "https://www.propertyradar.com/features-overview": {
+        "id": 20,
+        "publisher": "PropertyRadar",
+        "url": "https://www.propertyradar.com/features-overview",
+        "title": "PropertyRadar Features Overview",
+        "info": "150+ million properties with detailed owner insights, mortgage and transaction history, lead generation capabilities, automated outreach tools, and targeted marketing features."
+      },
+      "https://dealcheck.io/pricing/": {
+        "id": 21,
+        "publisher": "DealCheck",
+        "url": "https://dealcheck.io/pricing/",
+        "title": "DealCheck Pricing Plans",
+        "info": "Free plan available, pricing starts at basic monthly plan with rental cash flow calculator, house flipping calculator, multi-family analysis, and investment property analysis tools."
+      },
+      "https://www.myreipro.com/pricing/": {
+        "id": 22,
+        "publisher": "Real Estate Pro Network",
+        "url": "https://www.myreipro.com/pricing/",
+        "title": "REIPro Pricing Plans",
+        "info": "Standard Plan at $109/month with all core features from start to paycheck. Includes lead generation, direct mail, skip tracing, deal analysis, and educational content."
+      },
+      "https://www.buildxact.com/us/pricing/": {
+        "id": 23,
+        "publisher": "BuildXact",
+        "url": "https://www.buildxact.com/us/pricing/",
+        "title": "BuildXact Pricing for US Market",
+        "info": "Flexible pricing starting at monthly/annual plans with 15% discount for annual. 14-day free trial available. Easy-to-use project and construction management software for builders and contractors."
+      },
+      "https://www.stackct.com/pricing/": {
+        "id": 24,
+        "publisher": "STACK Construction",
+        "url": "https://www.stackct.com/pricing/",
+        "title": "STACK Construction Software Pricing",
+        "info": "Multiple pricing tiers starting at $2,999/year for single-user Takeoff and Estimating tool. Cloud-based construction software with advanced measurement and markup tools."
+      },
+      "https://www.zinspector.com/pricing/": {
+        "id": 25,
+        "publisher": "zInspector",
+        "url": "https://www.zinspector.com/pricing/",
+        "title": "zInspector Pricing Plans",
+        "info": "15-day free trial available. Free for users with under 5 units. Starting at $12/month for 1 user with unlimited properties. Core features include property inspection tools, photo management, and 360-degree tours."
+      },
+      "https://www.buildium.com/pricing/": {
+        "id": 26,
+        "publisher": "Buildium",
+        "url": "https://www.buildium.com/pricing/",
+        "title": "Buildium Property Management Pricing",
+        "info": "Essential plan starting at $62/month, Growth at $192/month, Premium at $400/month. Includes property inspections, tenant screening, lease management, and rent collection."
+      },
+      "https://rehabvaluator.com/": {
+        "id": 27,
+        "publisher": "RehabValuator",
+        "url": "https://rehabvaluator.com/",
+        "title": "RehabValuator House Flipping Software",
+        "info": "Free lite version available. Calculates After Repair Value (ARV), Maximum Allowable Offer (MAO), and financing methods. ARV calculator with comparable sales in any market."
+      },
+      "https://www.magicplan.app/pricing": {
+        "id": 28,
+        "publisher": "MagicPlan",
+        "url": "https://www.magicplan.app/pricing",
+        "title": "MagicPlan AR Property App Pricing",
+        "info": "24-month contract at $25/month, 12-month contract at $30/month, month-to-month at $40/month. Augmented reality floor plan creation, photo documentation, and estimating tools."
+      },
+      "https://construction.autodesk.com/products/proest/": {
+        "id": 29,
+        "publisher": "Autodesk ProEst",
+        "url": "https://construction.autodesk.com/products/proest/",
+        "title": "ProEst Construction Estimating Software",
+        "info": "Annual subscription starting at $5,000/year with unlimited users. Cloud-based construction estimating with cost databases, bid management, and digital takeoffs."
+      }
+    }
+  }
+}
