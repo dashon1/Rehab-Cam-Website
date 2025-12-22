@@ -1,10 +1,10 @@
-# Video Script 3: The $100K Lead Generation System That Actually Works
+# Video Script 3: Real Estate Lead Generation System - Building Sustainable Client Flow
 
 ## Hook (0-15 seconds)
-"What if I told you that 80% of real estate agents fail in their first two years because they don't understand lead generation? Today, I'm sharing the exact system that's generated over $100 million in real estate deals."
+"Did you know that lead generation is one of the biggest challenges facing real estate professionals? Today, I'm sharing proven lead generation strategies that many successful agents use to build sustainable client flow."
 
 ## Introduction (15-45 seconds)
-"Hey everyone! I'm [Your Name], and I've trained over 2,000 real estate professionals on how to build a sustainable lead generation system. Today, we're going beyond generic advice - I'm giving you the exact scripts, systems, and strategies that top agents use to consistently generate high-quality leads."
+"Hey everyone! I'm [Your Name], and I've worked with many real estate professionals on developing effective lead generation systems. Today, I'm sharing practical scripts, systems, and strategies that can help you generate and convert leads consistently."
 
 ## Main Content (45 seconds - 5:00 minutes)
 
@@ -69,8 +69,8 @@ Expired Listing Script:
 FSBO Script:
 'Hi [Name], I work with a lot of For Sale By Owners and help them with the complex parts while they keep control of the sale. I'd love to share some insights that might be helpful.'"
 
-## Case Study (5:00 - 5:30 minutes)
-"Let me show you how this works in real life. Agent Jennifer used this exact system. Month 1: 2 transactions. Month 6: 6 transactions. Month 12: 12 transactions. She's now at $2.8M in annual sales, all from consistent daily activities."
+## Case Study Example (5:00 - 5:30 minutes)
+"Here's how this system might work for an agent: Month 1: 2 transactions. Month 6: 6 transactions. Month 12: 12 transactions. While individual results vary, consistent daily activities and systematic follow-up typically lead to improved performance over time."
 
 ## Call-to-Action (5:30 - 6:00 minutes)
 "If you want the complete Lead Generation Playbook with all scripts, tracking sheets, and templates, it's free in my description below. 

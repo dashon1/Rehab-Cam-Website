@@ -1,10 +1,10 @@
-# Video Script 4: Market Analysis Mastery - Read Any Market in 15 Minutes
+# Video Script 4: Real Estate Market Analysis Framework - Efficient Market Evaluation
 
 ## Hook (0-15 seconds)
-"How long does it take you to analyze a real estate market? If it's more than 15 minutes, you're leaving money on the table. Today, I'm revealing the exact market analysis framework used by million-dollar real estate professionals."
+"How long does it take you to analyze a real estate market? Efficient market analysis is crucial for successful real estate decisions. Today, I'm sharing a practical market analysis framework that can help you evaluate investment opportunities more effectively."
 
 ## Introduction (15-45 seconds)
-"Welcome back to [Channel Name]! I'm [Your Name], and over the past [X] years, I've analyzed markets in 47 different cities. Today, I'm sharing the exact 6-step framework that helps you identify profitable opportunities and avoid market traps - in just 15 minutes."
+"Welcome back to [Channel Name]! I'm [Your Name], and I've worked with market analysis for various cities and regions. Today, I'm sharing a 6-step framework that helps identify potential opportunities and risks in real estate markets."
 
 ## Main Content (45 seconds - 6:00 minutes)
 
@@ -85,7 +85,7 @@ Total score: 85/100 - Investable market."
 I've created a Market Analysis Template that you can download for free - link in the description."
 
 ## Call-to-Action (7:15 - 7:45 minutes)
-"If you want my complete Market Analysis Toolkit with the template I just showed you, Excel calculators, and the 47-city database I've analyzed, it's yours free in the description.
+"If you want my complete Market Analysis Toolkit with the template I just showed you and Excel calculators for market evaluation, it's yours free in the description.
 
 Next week, I'm doing a deep-dive into rental market analysis - perfect for landlords and investors. Hit that notification bell so you don't miss it!
 

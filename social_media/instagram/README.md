@@ -147,12 +147,12 @@ social_media/instagram/
 
 ### Engagement Metrics
 - **Likes, Comments, Shares**: Track by content type
-- **Story Completion Rate**: Aim for 70%+
+- **Story Completion Rate**: Track and optimize engagement metrics
 - **Reels Views and Completion**: Target 3-second hook retention
 - **Profile Visits**: Track conversion from content
 
 ### Growth Metrics
-- **Follower Growth Rate**: Monthly target of 5-10%
+- **Follower Growth Rate**: Focus on sustainable audience growth
 - **Reach and Impressions**: Track hashtag performance
 - **Website Clicks**: Link-in-bio conversions
 - **App Downloads**: Ultimate conversion metric

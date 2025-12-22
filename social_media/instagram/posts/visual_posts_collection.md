@@ -5,7 +5,7 @@
 **Visual Concept**: Split screen showing before/after of AR X-ray feature
 - **Left**: Traditional property inspection photo
 - **Right**: Same property with AR overlay showing electrical/plumbing systems
-- **Caption**: "See through walls, literally! 🔍 Our AR X-ray vision reveals hidden systems, making property inspections 10x faster and more accurate. Transform your property analysis game today! #PropTech #RealEstateTech #AR #PropertyInspection #Innovation"
+- **Caption**: "See through walls, literally! 🔍 Our AR X-ray vision reveals hidden systems, helping streamline property inspections and improve analysis accuracy. Transform your property analysis game today! #PropTech #RealEstateTech #AR #PropertyInspection #Innovation"
 - **Call-to-Action**: "Swipe up to download Rehab-E Cam!"
 - **Best Time to Post**: Tuesday 11 AM - 1 PM
 
@@ -28,8 +28,8 @@
 ### Post 4: ROI Success Story
 **Visual Concept**: Success metrics with property photos
 - **Visual**: Infographic-style layout showing ROI numbers with property images
-- **Metrics**: "43% ROI increase", "50% faster deals", "$2.3M saved in first quarter"
-- **Caption**: "Real results from real investors 📊 Sarah from Texas used our platform to identify and flip 12 properties in Q3, averaging 43% ROI. Her secret? Data-driven decisions powered by AI analysis. Ready to scale your portfolio? #ROI #RealEstateSuccess #PropertyInvestment #DataDriven"
+- **Metrics**: "Improved ROI tracking", "Streamlined deal process", "Better investment insights"
+- **Caption**: "Real results from real investors 📊 Many investors report improved decision-making and more efficient property analysis using data-driven tools. The key? Leveraging AI analysis for better insights. Ready to improve your investment process? #ROI #RealEstateSuccess #PropertyInvestment #DataDriven"
 - **Call-to-Action**: "Share your success story in the comments!"
 - **Best Time to Post**: Wednesday 2 PM - 4 PM
 
@@ -45,7 +45,7 @@
 **Visual Concept**: Clock/calendar visual showing time savings
 - **Visual**: Clock showing "Before: 8 hours" vs "After: 2 hours"
 - **Elements**: Before/after workflow comparison
-- **Caption**: "Time is money, and we're saving you both ⏰ What used to take a full day now takes 2 hours. More time for what matters: building relationships, closing deals, and growing your business. #TimeManagement #Efficiency #RealEstateProductivity #WorkSmarter"
+- **Caption**: "Time is money, and we're helping you optimize both ⏰ Streamlined workflows can significantly reduce analysis time, giving you more time for building relationships, closing deals, and growing your business. #TimeManagement #Efficiency #RealEstateProductivity #WorkSmarter"
 - **Call-to-Action**: "Comment 'SAVE TIME' if you need this!"
 - **Best Time to Post**: Tuesday 3 PM - 5 PM
 
@@ -85,7 +85,7 @@
 **Visual Concept**: Cost comparison infographic
 - **Visual**: Bar chart showing Rehab-E Cam vs traditional estimates
 - **Elements**: Accuracy percentages, savings amounts
-- **Caption**: "Accuracy that saves money 💰 Our AI-powered cost estimates are 95% accurate, helping investors avoid costly surprises and budget overruns. Stop losing money on inaccurate estimates. #CostEstimation #Budget #Accuracy #Investment #Savings"
+- **Caption**: "Better accuracy that saves money 💰 Our AI-powered cost estimates help investors improve budget planning and reduce unexpected costs. Make more informed decisions with enhanced estimate accuracy. #CostEstimation #Budget #Accuracy #Investment #Savings"
 - **Call-to-Action**: "What's your biggest budgeting challenge?"
 - **Best Time to Post**: Thursday 7 PM - 9 PM
 
@@ -93,7 +93,7 @@
 **Visual Concept**: User photo with testimonial quote
 - **Visual**: Professional headshot with quote overlay
 - **Elements**: Real user, authentic testimonial
-- **Caption**: "'This app changed my entire business' - Mike Rodriguez, Real Estate Investor 🏆 When Mike started using our platform, he went from analyzing 2 properties a month to 15+ properties with the same accuracy but 10x the speed. #CustomerSuccess #Testimonial #RealEstateInvestor #Growth #Results"
+- **Caption**: "'This app streamlined my workflow' - Real Estate Professional 🏆 Many investors report increased efficiency in their property analysis process, allowing them to evaluate more opportunities with better data. #CustomerSuccess #Testimonial #RealEstateInvestor #Growth #Results"
 - **Call-to-Action**: "Read Mike's full story (link in bio)!"
 - **Best Time to Post**: Tuesday 6 PM - 8 PM
 
@@ -109,7 +109,7 @@
 **Visual Concept**: Portfolio growth visualization
 - **Visual**: Before/after portfolio metrics
 - **Elements**: Number of properties, ROI improvements, time saved
-- **Caption**: "Scale without the stress 📈 Our platform helps investors manage larger portfolios with the same (or less) effort. See how Jennifer grew from 3 to 25 properties in 18 months. #PortfolioManagement #Scale #Growth #RealEstateInvesting #Success"
+- **Caption**: "Scale without the stress 📈 Our platform helps investors manage larger portfolios with improved organization and efficiency. See how strategic analysis tools can support portfolio growth. #PortfolioManagement #Scale #Growth #RealEstateInvesting #Success"
 - **Call-to-Action**: "What's your portfolio goal?"
 - **Best Time to Post**: Wednesday 5 PM - 7 PM
 

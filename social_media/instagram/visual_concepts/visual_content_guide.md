@@ -106,7 +106,7 @@
 - Property portfolio images
 - Quote testimonial
 **Captions**:
-- "Success story: [Name] went from [starting point] to [achievement] in [timeframe]"
+- "Success story: [Generic investor example] improved their investment process using [tool/strategy]"
 - "Meet [Name], [title] who transformed their investment strategy 🚀"
 - "Real investor, real results 📊 [Name]'s journey to [specific achievement]"
 
@@ -118,8 +118,8 @@
 - Timeline information
 - Key strategy highlights
 **Captions**:
-- "ROI reveal: [Percentage] on this [property type] 💰 The strategy that made it happen"
-- "The numbers don't lie 📈 [Specific achievement] in [timeframe]"
+- "ROI insights: [Property analysis] 💰 The strategy that improved results"
+- "The results speak for themselves 📈 [Investment improvement] over time"
 - "From investment to impressive returns 🎯 See how analysis drives success"
 
 ### 5. Behind-the-Scenes Content
@@ -196,7 +196,7 @@ Engagement: Invite others to share their goals
 #### Opening Hooks That Work
 - **Question Hooks**: "Ever wonder why 90% of property deals fail?"
 - **Statement Hooks**: "This property analysis changed everything for Sarah"
-- **Number Hooks**: "3 mistakes that cost investors $50K+"
+- **Number Hooks**: "3 costly mistakes investors should avoid"
 - **Story Hooks**: "Last month, Mike discovered something that transformed his business"
 - **Controversy Hookes**: "Unpopular opinion: Traditional property analysis is broken"
 

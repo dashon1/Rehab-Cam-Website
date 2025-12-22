@@ -110,16 +110,16 @@ The real estate industry is experiencing a technology revolution, but adoption r
 **The Industry Reality Check:**
 
 **Current Adoption Rates:**
-- 23% of investors use advanced technology tools
-- 67% still rely primarily on manual methods
-- 45% of contractors use digital estimation tools
-- 78% of real estate professionals lack mobile-first workflows
+- Increasing technology adoption in real estate
+- Many investors still use traditional methods
+- Growing contractor digital tool usage
+- Rising mobile-first workflow adoption
 
 **Success Stories:**
-- Early adopters report 3x higher deal volumes
-- Technology users close deals 40% faster
-- AR/AI tool users maintain 30%+ profit margins
-- Mobile-first professionals scale 5x larger
+- Early adopters report higher deal volumes
+- Technology users close deals more efficiently
+- AR/AI tool users maintain better profit margins
+- Mobile-first professionals scale more effectively
 
 **What's Your Experience?**
 

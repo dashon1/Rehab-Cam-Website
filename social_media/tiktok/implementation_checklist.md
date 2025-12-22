@@ -160,16 +160,16 @@
 - [ ] Website traffic from TikTok
 
 ### Monthly Goals
-- [ ] Engagement rate above 8%
-- [ ] 5-10 qualified leads generated
-- [ ] 500-1000 new followers
-- [ ] 70%+ video completion rate
+- [ ] Work toward healthy engagement rates
+- [ ] Generate qualified leads through content
+- [ ] Build authentic engaged followers
+- [ ] Achieve good video completion rates
 - [ ] Establish consistent posting routine
 
 ### Quarterly Objectives
 - [ ] Become recognized local real estate authority
-- [ ] Generate 20-30 qualified leads
-- [ ] Build engaged community of 2000+ followers
+- [ ] Generate qualified leads through consistent content
+- [ ] Build engaged community through authentic content
 - [ ] Launch successful content series
 - [ ] Integrate TikTok with overall marketing strategy
 

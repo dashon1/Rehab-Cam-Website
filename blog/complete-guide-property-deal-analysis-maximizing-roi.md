@@ -108,9 +108,9 @@ Property deal analysis has undergone a dramatic transformation over the past dec
 
 **Cash-on-Cash Return**
 - Formula: (Annual Cash Flow / Total Cash Invested) × 100
-- Target: 8-12% for buy-and-hold properties
-- 15-25% for house flipping projects
-- 20%+ for value-add opportunities
+- Target: 6-10% for buy-and-hold properties (market-dependent)
+- 10-20% for house flipping projects (varies significantly by market)
+- 12-18% for value-add opportunities (highly variable)
 
 **Cap Rate (Capitalization Rate)**
 - Formula: (Net Operating Income / Property Value) × 100
@@ -121,7 +121,7 @@ Property deal analysis has undergone a dramatic transformation over the past dec
 **Internal Rate of Return (IRR)**
 - Formula: Complex calculation accounting for time value of money
 - Use: Long-term investment performance measurement
-- Target: 12-18% for most real estate investments
+- Target: 8-15% for most real estate investments (varies by market conditions)
 - Considers all cash flows over investment period
 
 **Total Return on Investment**
@@ -223,8 +223,8 @@ Rehab-E-Cam represents the gold standard in property deal analysis, combining cu
 
 #### Core Analysis Features
 
-**Live X-Ray Property Assessment**
-- Identify hidden structural and systems issues
+**Enhanced Property Assessment**
+- Comprehensive visual analysis and documentation
 - Reduce inspection costs and time requirements
 - Accurately estimate repair and renovation costs
 - Eliminate unexpected expenses and cost overruns
@@ -244,10 +244,10 @@ Rehab-E-Cam represents the gold standard in property deal analysis, combining cu
 #### Why Rehab-E-Cam Dominates Deal Analysis
 
 **Accuracy and Precision**
-- 95% accuracy in cost estimation vs. 70% traditional methods
+- Improved cost estimation through comprehensive data analysis
 - Real-time market data and pricing adjustments
 - Comprehensive variable consideration and analysis
-- Elimination of human bias and calculation errors
+- Reduced human bias through systematic methodology
 
 **Speed and Efficiency**
 - Complete analysis in minutes, not hours or days
@@ -276,7 +276,7 @@ Rehab-E-Cam represents the gold standard in property deal analysis, combining cu
 - Investment potential scoring
 
 **Benefits:**
-- 90%+ valuation accuracy for residential properties
+- improved+ valuation accuracy for residential properties
 - Comprehensive market intelligence
 - Automated reporting and documentation
 - API integration for custom applications
@@ -424,7 +424,7 @@ Rehab-E-Cam represents the gold standard in property deal analysis, combining cu
 - Natural disaster and climate risk assessment
 
 **Rehab-E-Cam AR Analysis Implementation**
-- Live X-Ray technology for hidden issue identification
+- Enhanced visualization for comprehensive issue identification
 - Real-time cost estimation and budget planning
 - Before and after visualization and planning
 - Comprehensive documentation and reporting
@@ -816,7 +816,7 @@ Rehab-E-Cam represents the gold standard in property deal analysis, combining cu
 #### Property Analysis with Rehab-E-Cam
 
 **Physical Assessment**
-- Live X-Ray identified outdated electrical panel
+- Enhanced analysis identified outdated electrical panel
 - Plumbing in good condition with copper pipes
 - HVAC system 8 years old, functioning properly
 - Roof needs replacement within 2 years

@@ -1,10 +1,10 @@
-# Video Script 2: From $50K to $2M in 3 Years - Real Estate Success Story
+# Video Script 2: Real Estate Success Story - Building Wealth Through Property Investment
 
 ## Hook (0-15 seconds)
-"Three years ago, Sarah was a single mom working two jobs, $50K in debt. Today, she owns a real estate portfolio worth over $2 million. Here's exactly how she did it..."
+"Today I'm sharing an inspiring real estate success story about someone who transformed their financial situation through property investment. While individual results vary, this story demonstrates what's possible with dedication and the right strategy..."
 
 ## Introduction (15-45 seconds)
-"Welcome back to [Channel Name]! I'm [Your Name], and today I'm sharing one of the most inspiring success stories from our real estate community. This isn't some get-rich-quick scheme - it's a proven system that anyone can follow with dedication and the right guidance."
+"Welcome back to [Channel Name]! I'm [Your Name], and today I'm sharing an educational success story that shows the potential of real estate investing. This isn't a guarantee of specific results - real estate success requires hard work, market knowledge, and often some initial capital or financing strategies."
 
 ## Story Arc (45 seconds - 5:00 minutes)
 
@@ -52,9 +52,9 @@ Today, she owns 12 properties, worth $2.1 million, generating $18K monthly in pa
 5. She treated it like a business, not a hobby"
 
 ## Call-to-Action (6:00 - 6:30 minutes)
-"Sarah's success story isn't unique - it's repeatable. I've helped over 500 real estate professionals build wealth through property investment.
+"While every investor's journey is unique, this success story demonstrates key principles that can be applied to real estate investing. Many factors contribute to success including market conditions, personal circumstances, and execution.
 
-Want to start your own success story? Download my free 'First Time Investor Guide' in the description below. It includes the exact strategies Sarah used, including the credit repair timeline and financing options.
+Want to learn more about property investment strategies? Download my free 'First Time Investor Guide' in the description below. It includes educational information about credit repair, financing options, and investment fundamentals that investors should understand.
 
 And if you know someone who needs to hear this story, tag them below! Next week, I'm interviewing another success story - a teacher who bought her first rental property while still in the classroom.
 

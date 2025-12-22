@@ -11,7 +11,7 @@
 - **3-8s**: Phone opens Rehab-E Cam app with AR mode activated
 - **8-15s**: Phone pointed at wall, AR overlay appears showing electrical/plumbing systems
 - **15-22s**: Split screen showing before (traditional methods) vs after (AR-powered analysis)
-- **22-27s**: Success metrics appear: "10x faster", "95% accuracy", "Zero missed issues"
+- **22-27s**: Success metrics appear: "Improved efficiency", "Enhanced accuracy", "Better analysis"
 - **27-30s**: App logo with "Download Link in Bio" text overlay
 
 **Visual Elements**:
@@ -27,15 +27,15 @@
 ### Reel 2: "From Beginner to 6-Figure Investor"
 **Duration**: 45 seconds
 **Music**: Inspirational, motivational background track
-**Hook**: "How Sarah went from analyzing 2 properties to 25+ properties per month"
+**Hook**: "How modern investors are streamlining their property analysis process"
 
 **Script Structure**:
 - **0-5s**: Text overlay: "Meet Sarah - Real Estate Beginner"
 - **5-10s**: Quick montage of traditional analysis (paper notes, calculator, multiple apps)
 - **10-15s**: "The turning point" - discovering Rehab-E Cam
 - **15-25s**: Fast-forward montage showing transformed workflow (mobile analysis, instant reports, data insights)
-- **25-35s**: Results showcase: "12 Properties Flipped", "43% Average ROI", "$2.3M Portfolio Value"
-- **35-40s**: Sarah testimonial snippet: "This app changed everything"
+- **25-35s**: Results showcase: "Improved Analysis Efficiency", "Better Investment Decisions", "Streamlined Workflow"
+- **35-40s**: Testimonial snippet: "This app improved my process"
 - **40-45s**: Call-to-action: "Ready to transform your business?"
 
 **Visual Elements**:
@@ -52,7 +52,7 @@
 ### Reel 3: "The $50K Mistake Every Investor Makes"
 **Duration**: 30 seconds
 **Music**: Dramatic, attention-grabbing track
-**Hook**: "You're about to lose $50K on your next property deal"
+**Hook**: "Hidden property issues that could cost you money"
 
 **Script Structure**:
 - **0-3s**: "You're about to lose $50K" text with warning graphics
@@ -99,7 +99,7 @@
 ### Reel 5: "Before vs After: App Transformation"
 **Duration**: 45 seconds
 **Music**: Dramatic transformation track
-**Hook**: "Watch how this real estate investor's business transformed in 30 days"
+**Hook**: "See how real estate technology can transform your workflow"
 
 **Script Structure**:
 - **0-8s**: "BEFORE" segment - chaotic workflow, multiple tools, long hours

@@ -4,7 +4,7 @@
 "What if I told you that the average real estate agent wastes 20 hours per week on tasks that could be automated? Today, I'm sharing the exact 10 tech tools that can save you time, increase your income, and make you more professional."
 
 ## Introduction (15-45 seconds)
-"Hey everyone! I'm [Your Name], and I've tested over 200 real estate technology tools. Today, I'm cutting through the noise and giving you the 10 tools that actually deliver ROI for real estate professionals. These aren't just nice-to-have tools - they're game-changers."
+"Hey everyone! I'm [Your Name], and I've researched many real estate technology tools. Today, I'm sharing practical tools that can help real estate professionals improve efficiency and potentially increase their ROI. These tools can be valuable additions to your business."
 
 ## Main Content (45 seconds - 7:00 minutes)
 
@@ -33,7 +33,7 @@ Cost: $100-300/month. ROI: 40% more listing appointments."
 - Hashtag research and optimization
 - Analytics and engagement tracking
 
-Cost: $30-100/month. ROI: 300% increase in social media leads."
+Cost: $30-100/month. Potential benefit: Improved social media consistency and organization."
 
 ### Tool 4: Document Management System (3:00 - 3:45 minutes)
 "Stop drowning in paperwork. [Platform Name] is my choice
@@ -51,7 +51,7 @@ Cost: $50-150/month. ROI: Eliminate 90% of paper filing."
 - CRM integration
 - ROI tracking and analytics
 
-Cost: $200-500/month. ROI: $10-20K monthly in new business."
+Cost: $200-500/month. Potential benefit: Improved lead generation and tracking capabilities."
 
 ### Tool 6: Pricing and Market Analysis Tool (4:30 - 5:15 minutes)
 "Accurate pricing is crucial. [Platform Name] provides:

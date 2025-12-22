@@ -4,10 +4,10 @@
 ## Target: Real estate professionals seeking systematic success
 
 ### Opening Hook (0-8 seconds)
-"Want to know why 87% of real estate agents fail within their first two years? It all comes down to one thing: they don't have a system."
+"Real estate success requires the right strategies and consistent execution. Many agents struggle because they don't have a systematic approach to building their business."
 
 ### Introduction (8-15 seconds)
-"I'm [Your Name], and over the past [X] years, I've helped over [X] real estate professionals build million-dollar businesses using proven systems and strategies."
+"I'm [Your Name], and I work with real estate professionals to develop effective business systems and strategies for long-term success."
 
 ### Value Proposition (15-35 seconds)
 "Welcome to [Channel Name] - your ultimate resource for real estate success. Here's what you'll get every week:
@@ -19,8 +19,8 @@
 
 No fluff, no get-rich-quick schemes - just battle-tested strategies that deliver results."
 
-### Social Proof (35-45 seconds)
-"Our community has generated over $[X] million in real estate transactions. Agents who follow our systems average 40% more listings and 60% higher income within their first year."
+### Community Value (35-45 seconds)
+"We share practical strategies and real-world insights from experienced real estate professionals. Our focus is on providing educational content that can help agents improve their business practices and serve their clients better."
 
 ### Call-to-Action (45-60 seconds)
 "Ready to join thousands of successful real estate professionals? Hit that SUBSCRIBE button and ring the notification bell. Start with my free 'Real Estate Success Starter Kit' - link in the description. See you inside!"

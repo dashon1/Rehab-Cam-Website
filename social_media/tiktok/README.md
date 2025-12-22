@@ -62,19 +62,19 @@
 
 ### Content Types & Expected Performance
 
-#### High-Performing Content (Expect 10K+ views)
+#### High-Performing Content (May achieve 10K+ views)
 - Trending format adaptations
 - Relatable agent humor
 - Educational quick tips
 - Market update commentary
 
-#### Medium-Performing Content (Expect 3-10K views)
+#### Medium-Performing Content (May achieve 3-10K views)
 - Behind-the-scenes process videos
 - Property showcases
 - Client success stories
 - Local market insights
 
-#### Niche Content (Expect 1-3K views)
+#### Niche Content (May achieve 1-3K views)
 - Technical real estate topics
 - Investment deep-dives
 - Specific neighborhood content
@@ -199,11 +199,11 @@
 ### Success Stories & Examples
 
 #### High-Performing Content Examples
-1. **"Real Estate Agent Reacts to Budget Reality"** - 50K+ views
-2. **"Red Flags When Buying a House"** - 35K+ views  
-3. **"Day in My Life: Real Estate Agent"** - 25K+ views
-4. **"Explaining Closing Costs Simply"** - 20K+ views
-5. **"Market Monday Updates"** - 15K+ average views
+1. **"Real Estate Agent Reacts to Budget Reality"** - Potentially viral content
+2. **"Red Flags When Buying a House"** - Educational content with broad appeal  
+3. **"Day in My Life: Real Estate Agent"** - Relatable behind-the-scenes content
+4. **"Explaining Closing Costs Simply"** - Valuable educational content
+5. **"Market Monday Updates"** - Regular series content
 
 #### Engagement Success Factors
 - Relatable humor and situations
@@ -216,9 +216,9 @@
 
 #### 30-Day Goals
 - Establish consistent posting routine
-- Achieve 8%+ engagement rate
-- Generate 5-10 qualified leads
-- Build following of 500-1000 engaged users
+- Work toward healthy engagement rates
+- Generate leads through consistent value delivery
+- Build authentic following of engaged users
 
 #### 90-Day Expansion
 - Develop signature content series

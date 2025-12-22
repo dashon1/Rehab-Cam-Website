@@ -21,7 +21,7 @@ Strategic playlist organization serves dual purposes: improving YouTube's algori
 **Content Focus:** Consistent lead generation, prospecting scripts
 **Videos per Playlist:** 20-25
 **Example Videos:**
-- "The $100K Lead Generation System"
+- "Real Estate Lead Generation Strategies"
 - "Cold Calling Scripts That Convert"
 - "Social Media Lead Generation"
 - "Referral Systems That Work"
@@ -65,7 +65,7 @@ Strategic playlist organization serves dual purposes: improving YouTube's algori
 **Content Focus:** CRM, marketing tools, automation
 **Videos per Playlist:** 10-15
 **Example Videos:**
-- "10 Tech Tools That Revolutionize Your Business"
+- "10 Tech Tools That Can Improve Your Real Estate Business"
 - "CRM Setup and Optimization"
 - "Social Media Automation"
 - "Virtual Tour Platforms Review"
@@ -77,7 +77,7 @@ Strategic playlist organization serves dual purposes: improving YouTube's algori
 **Content Focus:** Real agent transformations, deal breakdowns
 **Videos per Playlist:** 12-15
 **Example Videos:**
-- "From $50K to $2M in 3 Years"
+- "Real Estate Investment Success Story"
 - "Single Mom to Top Producer"
 - "Breakdown: $500K Listing Deal"
 - "Commercial Success Story"
@@ -86,7 +86,7 @@ Strategic playlist organization serves dual purposes: improving YouTube's algori
 **Content Focus:** Market data, trends, local insights
 **Videos per Playlist:** 8-12
 **Example Videos:**
-- "Market Analysis Mastery"
+- "Real Estate Market Analysis Framework"
 - "Reading Market Indicators"
 - "Seasonal Trends Explained"
 - "Economic Factors Affecting Real Estate"

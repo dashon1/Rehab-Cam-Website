@@ -1,18 +1,18 @@
 # 10 Trending-Style Video Scripts for Real Estate Professionals
 
-## Script 1: "Real Estate Agent Reacts to Homebuyer's Crazy Demands"
-**Trending Format**: Reaction video
+## Script 1: "Real Estate Agent Explains Budget Reality"
+**Trending Format**: Educational video
 **Duration**: 30 seconds
-**Hook**: "POV: A client sends you their 'non-negotiable' list"
+**Hook**: "POV: Helping clients understand today's market prices"
 
 **Script**:
-- 0-3s: [Text overlay] "Client sent me their 'realistic' budget and wishlist"
-- 3-15s: [Show screenshot] Budget: $200k | Must-haves: Pool, 5 bedrooms, downtown location, newly renovated
-- 15-25s: [Reaction] "Oh honey... let me show you what's actually possible"
-- 25-30s: [Text] "Real estate agents be like... 💀 #RealEstateTok #BudgetReality"
+- 0-3s: [Text overlay] "Explaining today's market to first-time buyers"
+- 3-15s: [Show realistic example] "Budget expectations vs. market reality"
+- 15-25s: [Educational tone] "Let me show you what's achievable in your range"
+- 25-30s: [Text] "Real estate education saves time and money #RealEstateEducation"
 
-**Props Needed**: Phone showing fake screenshot, casual office setting
-**CTA**: "What wildest demand have you gotten? Comment below!"
+**Props Needed**: Phone showing market data, professional office setting
+**CTA**: "What questions do you have about budgeting for homes?"
 
 ---
 
@@ -35,20 +35,20 @@
 
 ---
 
-## Script 3: "Real Estate Agent Tries to Explain Millennial Budget to Client"
-**Trending Format**: Comedy skit
+## Script 3: "Real Estate Price Changes Over Time"
+**Trending Format**: Educational comparison
 **Duration**: 30 seconds
-**Hook**: "When a client asks why you can't find anything in their budget"
+**Hook**: "How real estate prices have changed over the years"
 
 **Script**:
-- 0-3s: Text overlay: "Explaining 2024 real estate prices to a client"
-- 3-10s: [Serious tone] "So for $300k in 2010, you got a mansion..."
-- 10-20s: [Hopeful face] "But in 2024, for $300k..." [Shows small apartment listing]
-- 20-28s: [Dramatic pause] "You get... parking"
-- 28-30s: Text: "Plot twist: parking not included 😬 #RealEstateReality #MillennialBudget"
+- 0-3s: Text overlay: "Real estate prices: Then vs. Now"
+- 3-10s: [Informative tone] "What $300k bought in 2010 vs. today"
+- 10-20s: [Educational] "Market appreciation affects all price ranges"
+- 20-28s: [Helpful tone] "Understanding this helps set realistic expectations"
+- 28-30s: Text: "Knowledge is power in real estate #MarketEducation"
 
-**Props Needed**: Phone/tablet with listings, dramatic facial expressions
-**CTA**: "What's the biggest price shock you've had to deliver?"
+**Props Needed**: Phone/tablet with market data, professional presentation
+**CTA**: "What market trends have you noticed in your area?"
 
 ---
 

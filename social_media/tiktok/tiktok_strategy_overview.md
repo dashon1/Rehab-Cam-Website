@@ -54,8 +54,8 @@ This comprehensive TikTok strategy is designed to help real estate professionals
 - **Call-to-Action** (25-30 seconds): Next step for viewers
 
 ## Success Metrics
-- **Engagement Rate**: Target 8%+ for real estate content
-- **View Completion Rate**: Target 70%+ completion rate
+- **Engagement Rate**: Work toward healthy engagement rates
+- **View Completion Rate**: Aim for good completion rates
 - **Comment Quality**: Focus on meaningful engagement over quantity
 - **Profile Visits**: Track increase in profile visits
 - **Lead Generation**: Monitor direct messages and inquiries
