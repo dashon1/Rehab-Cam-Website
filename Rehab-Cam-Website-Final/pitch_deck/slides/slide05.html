@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>Slide 5</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            width: 1280px; height: 720px; overflow: hidden; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #111827;
+        }
+        .slide-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 20px;
+            padding: 60px 80px;
+            height: 100%;
+        }
+        .header {
+            grid-column: 1 / 13;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #0047AB;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: 54px;
+            font-weight: 700;
+            color: #0047AB;
+        }
+        .content-text {
+            grid-column: 1 / 7;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .content-image {
+            grid-column: 8 / 13;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .feature-list {
+            list-style: none;
+        }
+        .feature-item {
+            margin-bottom: 30px;
+        }
+        .feature-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .feature-desc {
+            font-size: 18px;
+            color: #4B5563;
+            padding-left: 36px;
+        }
+        .icon-box {
+            width: 24px;
+            height: 24px;
+            background-color: #00C2CB;
+            margin-right: 12px;
+            border-radius: 2px;
+        }
+        .device-mockup {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Rehab-E-Cam: Your Field Operating System</h2>
+        </div>
+        <div class="content-text">
+            <ul class="feature-list">
+                <li class="feature-item">
+                    <div class="feature-title"><div class="icon-box"></div>Mobile-First Platform</div>
+                    <div class="feature-desc">Complete field operating system for investors on the go.</div>
+                </li>
+                <li class="feature-item">
+                    <div class="feature-title"><div class="icon-box"></div>Cost Estimation Tools</div>
+                    <div class="feature-desc">AI-powered property analysis with renovation cost estimates.</div>
+                </li>
+                <li class="feature-item">
+                    <div class="feature-title"><div class="icon-box"></div>Automated Scope Gen</div>
+                    <div class="feature-desc">Turn photos and voice notes into professional Scopes of Work.</div>
+                </li>
+                <li class="feature-item">
+                    <div class="feature-title"><div class="icon-box"></div>Integrated Deal Analysis</div>
+                    <div class="feature-desc">Real-time ROI and maximum offer calculations in the field.</div>
+                </li>
+            </ul>
+        </div>
+        <div class="content-image">
+            <img src="images/app_mockup.png" alt="Rehab-E-Cam Interface" class="device-mockup">
+        </div>
+    </div>
+</body>
+</html>

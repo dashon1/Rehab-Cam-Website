@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>Slide 4</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            width: 1280px; height: 720px; overflow: hidden; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #111827;
+        }
+        .slide-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 20px;
+            padding: 60px 80px;
+            height: 100%;
+        }
+        .header {
+            grid-column: 1 / 13;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #0047AB;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: 54px;
+            font-weight: 700;
+            color: #0047AB;
+        }
+        .content-left {
+            grid-column: 1 / 7;
+        }
+        .content-right {
+            grid-column: 8 / 13;
+            background-color: #F3F4F6;
+            padding: 30px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        ul { list-style: none; }
+        li {
+            font-size: 24px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+            padding-left: 32px;
+            position: relative;
+        }
+        li::before {
+            content: "•";
+            color: #EF4444; /* Error red for problem slides */
+            font-size: 32px;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+        .process-flow {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .flow-step {
+            background: white;
+            padding: 15px 20px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid #D1D5DB;
+            color: #6B7280;
+        }
+        .flow-arrow {
+            color: #9CA3AF;
+        }
+        .highlight {
+            border: 2px solid #EF4444;
+            color: #EF4444;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Lender & Contractor Communication Breakdown</h2>
+        </div>
+        <div class="content-left">
+            <ul>
+                <li>Lenders reject financing packages due to non-standardized documentation.</li>
+                <li>Contractors bid 20-30% over budget because scopes of work are unclear.</li>
+                <li>Investors waste hours manually creating documents from scattered notes.</li>
+                <li>Quality varies drastically between projects and team members.</li>
+            </ul>
+        </div>
+        <div class="content-right">
+            <h3 style="text-align: center; color: #374151; margin-bottom: 20px;">The Broken Feedback Loop</h3>
+            <div class="process-flow">
+                <div class="flow-step">Investor Inspections (Manual Notes)</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step highlight">Information Loss / Errors</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step">Contractor Bid (Inflated Risk)</div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step highlight">Lender Rejection (Bad Docs)</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

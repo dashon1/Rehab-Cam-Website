@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>Slide 2</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            width: 1280px; height: 720px; overflow: hidden; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #111827;
+        }
+        .slide-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 20px;
+            padding: 60px 80px;
+            height: 100%;
+            position: relative;
+        }
+        .header {
+            grid-column: 1 / 13;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #0047AB;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: 54px;
+            font-weight: 700;
+            color: #0047AB;
+        }
+        .content-left {
+            grid-column: 1 / 8;
+            padding-right: 40px;
+        }
+        .content-right {
+            grid-column: 8 / 13;
+            background-color: #F9FAFB;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            font-size: 24px;
+            line-height: 1.5;
+            margin-bottom: 24px;
+            position: relative;
+            padding-left: 32px;
+        }
+        li::before {
+            content: "•";
+            color: #00C2CB;
+            font-size: 32px;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+        .stat-box {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 96px;
+            font-weight: 700;
+            color: #0047AB;
+            line-height: 1;
+        }
+        .stat-label {
+            font-size: 20px;
+            color: #6B7280;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Investors Are Stuck in the Stone Age</h2>
+        </div>
+        <div class="content-left">
+            <ul>
+                <li>Real estate investors juggle 3+ separate tools for inspection, analysis, and estimation.</li>
+                <li>Time-consuming manual data entry creates bottlenecks between platforms.</li>
+                <li>High error rates stem from constant context switching and fragmented data.</li>
+                <li>Missed opportunities accumulate due to slow analysis and decision paralysis.</li>
+            </ul>
+        </div>
+        <div class="content-right">
+            <div class="stat-box">
+                <div class="stat-number">4-6h</div>
+                <div class="stat-label">Hours spent per property<br>on due diligence</div>
+            </div>
+            <!-- Decorative icon representation -->
+            <svg style="margin-top: 40px; width: 64px; height: 64px; color: #00C2CB;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>Slide 22</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            width: 1280px; height: 720px; overflow: hidden; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #111827;
+        }
+        .slide-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 20px;
+            padding: 60px 80px;
+            height: 100%;
+        }
+        .header {
+            grid-column: 1 / 13;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #0047AB;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: 54px;
+            font-weight: 700;
+            color: #0047AB;
+        }
+        .lock-container {
+            grid-column: 1 / 13;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 400px;
+        }
+        .lock-step {
+            flex: 1;
+            background: #F9FAFB;
+            padding: 30px;
+            height: 100%;
+            margin: 0 10px;
+            border-top: 6px solid #D1D5DB;
+            display: flex;
+            flex-direction: column;
+        }
+        .lock-step.active {
+            border-top-color: #00C2CB;
+            background: #F0FDFA;
+        }
+        .step-num {
+            font-size: 48px;
+            font-weight: 700;
+            color: #E5E7EB;
+            margin-bottom: 20px;
+        }
+        .active .step-num {
+            color: #00C2CB;
+        }
+        .step-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+        .step-desc {
+            font-size: 16px;
+            color: #6B7280;
+        }
+        .arrow {
+            font-size: 30px;
+            color: #9CA3AF;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Customer Lock-In Strategy</h2>
+        </div>
+        <div class="lock-container">
+            <div class="lock-step">
+                <div class="step-num">01</div>
+                <div class="step-title">Adoption</div>
+                <div class="step-desc">Investor starts with Free Calculator. Low friction.</div>
+            </div>
+            <div class="arrow">→</div>
+            <div class="lock-step active">
+                <div class="step-num">02</div>
+                <div class="step-title">Integration</div>
+                <div class="step-desc">Lender requires Rehab-E-Cam packet for fast approval.</div>
+            </div>
+            <div class="arrow">→</div>
+            <div class="lock-step active">
+                <div class="step-num">03</div>
+                <div class="step-title">Dependence</div>
+                <div class="step-desc">Contractors standardize on our SOW format.</div>
+            </div>
+            <div class="arrow">→</div>
+            <div class="lock-step active">
+                <div class="step-num">04</div>
+                <div class="step-title">Retention</div>
+                <div class="step-desc">High switching cost to retrain entire team/network.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

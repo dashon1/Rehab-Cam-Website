@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>Slide 25</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            width: 1280px; height: 720px; overflow: hidden; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #111827;
+        }
+        .slide-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 20px;
+            padding: 60px 80px;
+            height: 100%;
+        }
+        .header {
+            grid-column: 1 / 13;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #0047AB;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: 54px;
+            font-weight: 700;
+            color: #0047AB;
+        }
+        .pricing-grid {
+            grid-column: 1 / 13;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            align-items: flex-end;
+        }
+        .plan-card {
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+        }
+        .plan-card.featured {
+            border: 2px solid #0047AB;
+            background-color: #F0F9FF;
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .plan-name {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .plan-price {
+            font-size: 48px;
+            font-weight: 700;
+            color: #0047AB;
+            margin-bottom: 20px;
+        }
+        .plan-features {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .feature-item {
+            margin-bottom: 10px;
+            color: #4B5563;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>SaaS with Usage-Based Expansion</h2>
+        </div>
+        <div class="pricing-grid">
+            <div class="plan-card">
+                <div class="plan-name">Free</div>
+                <div class="plan-price">$0</div>
+                <div class="plan-features">
+                    <div class="feature-item">Basic Calculator</div>
+                    <div class="feature-item">1 Project Limit</div>
+                </div>
+            </div>
+            <div class="plan-card featured">
+                <div class="plan-name">Pro Investor</div>
+                <div class="plan-price">$49<span style="font-size: 18px; color: #6B7280;">/mo</span></div>
+                <div class="plan-features">
+                    <div class="feature-item"><strong>Unlimited Live X-Ray</strong></div>
+                    <div class="feature-item">Auto Scope Gen</div>
+                    <div class="feature-item">Lender Exports</div>
+                </div>
+            </div>
+            <div class="plan-card">
+                <div class="plan-name">Team</div>
+                <div class="plan-price">$199<span style="font-size: 18px; color: #6B7280;">/mo</span></div>
+                <div class="plan-features">
+                    <div class="feature-item">5 Users</div>
+                    <div class="feature-item">Shared Portfolio</div>
+                    <div class="feature-item">Contractor Portal</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>Slide 13</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            width: 1280px; height: 720px; overflow: hidden; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #111827;
+        }
+        .slide-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 20px;
+            padding: 60px 80px;
+            height: 100%;
+        }
+        .header {
+            grid-column: 1 / 13;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #0047AB;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: 54px;
+            font-weight: 700;
+            color: #0047AB;
+        }
+        .moat-list {
+            grid-column: 1 / 8;
+            padding-right: 40px;
+        }
+        .moat-item {
+            margin-bottom: 40px;
+        }
+        .moat-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .moat-icon {
+            width: 12px;
+            height: 12px;
+            background-color: #00C2CB;
+            margin-right: 15px;
+            border-radius: 50%;
+        }
+        .moat-desc {
+            font-size: 22px;
+            color: #6B7280;
+            line-height: 1.5;
+            padding-left: 27px;
+        }
+        .graphic-right {
+            grid-column: 8 / 13;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Abstract 'Moat' Graphic */
+        .concentric-circles {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+        .circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            border: 2px solid #0047AB;
+        }
+        .c1 { width: 100px; height: 100px; background: #0047AB; z-index: 3; }
+        .c2 { width: 180px; height: 180px; border-color: #00C2CB; border-width: 4px; z-index: 2; }
+        .c3 { width: 260px; height: 260px; border-color: #E5E7EB; border-width: 10px; z-index: 1; }
+        .center-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-weight: bold;
+            z-index: 4;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Sustainable Competitive Advantages</h2>
+        </div>
+        <div class="moat-list">
+            <div class="moat-item">
+                <div class="moat-title"><div class="moat-icon"></div>First-Mover Advantage</div>
+                <div class="moat-desc">The first comprehensive AR solution specifically built for the investor workflow.</div>
+            </div>
+            <div class="moat-item">
+                <div class="moat-title"><div class="moat-icon"></div>Proprietary Data</div>
+                <div class="moat-desc">Unique cost database enriched by real-time user validation and completion data.</div>
+            </div>
+            <div class="moat-item">
+                <div class="moat-title"><div class="moat-icon"></div>Network Effects</div>
+                <div class="moat-desc">Lender & contractor adoption creates a standardized format that locks in users.</div>
+            </div>
+        </div>
+        <div class="graphic-right">
+            <div class="concentric-circles">
+                <div class="circle c3"></div>
+                <div class="circle c2"></div>
+                <div class="circle c1"></div>
+                <div class="center-text">Rehab-E-Cam</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

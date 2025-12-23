@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>Slide 8</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            width: 1280px; height: 720px; overflow: hidden; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #111827;
+        }
+        .slide-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 20px;
+            padding: 60px 80px;
+            height: 100%;
+        }
+        .header {
+            grid-column: 1 / 13;
+            margin-bottom: 50px;
+            border-bottom: 2px solid #0047AB;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: 54px;
+            font-weight: 700;
+            color: #0047AB;
+        }
+        .metrics-grid {
+            grid-column: 1 / 13;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+        .metric-card {
+            text-align: center;
+            padding: 40px;
+            background-color: #F9FAFB;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .metric-value {
+            font-size: 96px;
+            font-weight: 700;
+            color: #00C2CB;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+        .metric-label {
+            font-size: 24px;
+            font-weight: 500;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+        .metric-sub {
+            font-size: 16px;
+            color: #6B7280;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Why Rehab-E-Cam Changes Everything</h2>
+        </div>
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-value">30-50%</div>
+                <div class="metric-label">Faster Estimates</div>
+                <div class="metric-sub">Reduction in time-to-estimate</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">60-75%</div>
+                <div class="metric-label">Better Docs</div>
+                <div class="metric-sub">Improvement in documentation consistency</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">20-35%</div>
+                <div class="metric-label">Faster Closes</div>
+                <div class="metric-sub">Acceleration in deal turnaround time</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
