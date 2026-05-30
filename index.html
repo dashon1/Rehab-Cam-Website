@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RehabCam — Monitor Your Recovery From Home</title>
+    <style>
+        :root {
+            --primary: #0077B6;
+            --primary-dark: #005A8E;
+            --primary-light: #ADE8F4;
+            --secondary: #00B4D8;
+            --accent: #48CAE4;
+            --success: #2D9B5B;
+            --dark: #0A1628;
+            --text: #1A2B3C;
+            --muted: #4A6070;
+            --border: #D1DDE8;
+            --bg: #F4F8FC;
+            --white: #FFFFFF;
+            --shadow-sm: 0 2px 8px rgba(0,119,182,0.08);
+            --shadow-md: 0 8px 32px rgba(0,119,182,0.12);
+            --shadow-lg: 0 20px 60px rgba(0,119,182,0.16);
+            --radius: 12px;
+            --radius-lg: 20px;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: var(--text); background: var(--white); line-height: 1.6; }
+
+        /* NAV */
+        nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+        .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 68px; }
+        .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+        .nav-logo-icon { width: 36px; height: 36px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px; }
+        .nav-logo-text { font-size: 1.25rem; font-weight: 700; color: var(--primary); }
+        .nav-links { display: flex; gap: 28px; list-style: none; }
+        .nav-links a { text-decoration: none; color: var(--muted); font-weight: 500; font-size: 0.9rem; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--primary); }
+        .nav-cta { background: var(--primary); color: white; border: none; padding: 10px 24px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; cursor: pointer; transition: background 0.2s; text-decoration: none; }
+        .nav-cta:hover { background: var(--primary-dark); }
+
+        /* HERO */
+        .hero { background: linear-gradient(160deg, #0A1628 0%, #013A63 55%, #0077B6 100%); padding: 140px 24px 100px; text-align: center; position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: -40%; left: -20%; width: 140%; height: 140%; background: radial-gradient(ellipse at 60% 40%, rgba(72,202,228,0.15) 0%, transparent 60%); pointer-events: none; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: var(--primary-light); padding: 6px 16px; border-radius: 100px; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 24px; }
+        .hero-badge-dot { width: 7px; height: 7px; background: #48CAE4; border-radius: 50%; animation: pulse 2s infinite; }
+        @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+        .hero h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 800; color: white; line-height: 1.15; max-width: 820px; margin: 0 auto 20px; }
+        .hero h1 span { color: var(--accent); }
+        .hero-sub { font-size: 1.2rem; color: rgba(255,255,255,0.72); max-width: 620px; margin: 0 auto 40px; }
+        .hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+        .btn-primary { background: var(--primary); color: white; padding: 16px 36px; border-radius: var(--radius); font-weight: 700; font-size: 1.05rem; border: none; cursor: pointer; transition: all 0.2s; text-decoration: none; display: inline-block; }
+        .btn-primary:hover { background: var(--primary-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,119,182,0.4); }
+        .btn-outline { background: transparent; color: white; padding: 16px 36px; border-radius: var(--radius); font-weight: 700; font-size: 1.05rem; border: 2px solid rgba(255,255,255,0.3); cursor: pointer; transition: all 0.2s; text-decoration: none; display: inline-block; }
+        .btn-outline:hover { border-color: white; background: rgba(255,255,255,0.08); }
+        .hero-stats { display: flex; gap: 48px; justify-content: center; margin-top: 60px; flex-wrap: wrap; }
+        .hero-stat { text-align: center; }
+        .hero-stat-num { font-size: 2.2rem; font-weight: 800; color: var(--accent); display: block; }
+        .hero-stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.6); }
+
+        /* SECTION LAYOUT */
+        section { padding: 80px 24px; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .section-label { font-size: 0.8rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--primary); margin-bottom: 12px; }
+        .section-title { font-size: clamp(1.7rem, 3vw, 2.6rem); font-weight: 800; color: var(--dark); line-height: 1.2; margin-bottom: 16px; }
+        .section-sub { font-size: 1.1rem; color: var(--muted); max-width: 580px; }
+        .section-header { margin-bottom: 56px; }
+
+        /* HOW IT WORKS */
+        .how-it-works { background: var(--bg); }
+        .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px; }
+        .step { background: white; border-radius: var(--radius-lg); padding: 36px 28px; border: 1px solid var(--border); box-shadow: var(--shadow-sm); position: relative; }
+        .step-num { width: 48px; height: 48px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; font-weight: 800; color: white; margin-bottom: 20px; }
+        .step h3 { font-size: 1.1rem; font-weight: 700; color: var(--dark); margin-bottom: 10px; }
+        .step p { font-size: 0.95rem; color: var(--muted); }
+
+        /* FEATURES */
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
+        .feature-card { background: white; border-radius: var(--radius-lg); padding: 32px; border: 1px solid var(--border); box-shadow: var(--shadow-sm); transition: transform 0.2s, box-shadow 0.2s; }
+        .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+        .feature-icon { width: 52px; height: 52px; background: linear-gradient(135deg, rgba(0,119,182,0.1), rgba(0,180,216,0.1)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px; }
+        .feature-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--dark); margin-bottom: 10px; }
+        .feature-card p { font-size: 0.93rem; color: var(--muted); line-height: 1.7; }
+
+        /* PRICING */
+        .pricing-section { background: var(--bg); }
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; max-width: 980px; margin: 0 auto; }
+        .pricing-card { background: white; border-radius: var(--radius-lg); padding: 40px 32px; border: 2px solid var(--border); box-shadow: var(--shadow-sm); text-align: center; transition: transform 0.2s; }
+        .pricing-card.featured { border-color: var(--primary); box-shadow: var(--shadow-lg); transform: scale(1.03); }
+        .pricing-card:hover { transform: translateY(-4px); }
+        .pricing-card.featured:hover { transform: scale(1.03) translateY(-4px); }
+        .plan-badge { display: inline-block; background: var(--primary); color: white; font-size: 0.72rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 100px; margin-bottom: 16px; }
+        .plan-name { font-size: 1.3rem; font-weight: 800; color: var(--dark); margin-bottom: 8px; }
+        .plan-price { font-size: 3rem; font-weight: 800; color: var(--primary); line-height: 1; margin: 16px 0 4px; }
+        .plan-price span { font-size: 1rem; font-weight: 500; color: var(--muted); }
+        .plan-desc { font-size: 0.9rem; color: var(--muted); margin-bottom: 28px; }
+        .plan-features { list-style: none; text-align: left; margin-bottom: 32px; }
+        .plan-features li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.9rem; color: var(--text); padding: 7px 0; border-bottom: 1px solid var(--border); }
+        .plan-features li:last-child { border-bottom: none; }
+        .plan-features li::before { content: '✓'; color: var(--success); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+        .plan-btn { width: 100%; padding: 14px; border-radius: var(--radius); font-weight: 700; font-size: 1rem; cursor: pointer; border: none; transition: all 0.2s; }
+        .plan-btn-primary { background: var(--primary); color: white; }
+        .plan-btn-primary:hover { background: var(--primary-dark); }
+        .plan-btn-outline { background: transparent; color: var(--primary); border: 2px solid var(--primary); }
+        .plan-btn-outline:hover { background: var(--primary); color: white; }
+
+        /* TESTIMONIALS */
+        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+        .testimonial { background: white; border-radius: var(--radius-lg); padding: 32px; border: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+        .testimonial-stars { color: #F4A62A; font-size: 1.1rem; margin-bottom: 16px; letter-spacing: 2px; }
+        .testimonial p { font-size: 0.97rem; color: var(--text); line-height: 1.7; font-style: italic; margin-bottom: 20px; }
+        .testimonial-author { display: flex; align-items: center; gap: 12px; }
+        .testimonial-avatar { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--secondary)); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.1rem; }
+        .testimonial-author strong { display: block; font-size: 0.9rem; color: var(--dark); }
+        .testimonial-author span { font-size: 0.8rem; color: var(--muted); }
+
+        /* FAQ */
+        .faq-section { background: var(--bg); }
+        .faq-list { max-width: 760px; margin: 0 auto; }
+        .faq-item { background: white; border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 12px; overflow: hidden; }
+        .faq-q { width: 100%; text-align: left; background: none; border: none; padding: 22px 28px; font-size: 1rem; font-weight: 600; color: var(--dark); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; transition: background 0.15s; }
+        .faq-q:hover { background: var(--bg); }
+        .faq-chevron { width: 20px; height: 20px; flex-shrink: 0; transition: transform 0.3s; color: var(--primary); }
+        .faq-item.open .faq-chevron { transform: rotate(180deg); }
+        .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.2s; }
+        .faq-item.open .faq-a { max-height: 300px; }
+        .faq-a-inner { padding: 0 28px 22px; font-size: 0.95rem; color: var(--muted); line-height: 1.75; }
+
+        /* CONTACT */
+        .contact-section { background: linear-gradient(160deg, var(--dark) 0%, #013A63 100%); color: white; }
+        .contact-section .section-title { color: white; }
+        .contact-section .section-sub { color: rgba(255,255,255,0.6); }
+        .contact-form { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: var(--radius-lg); padding: 48px; max-width: 640px; margin: 0 auto; }
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .form-group { display: flex; flex-direction: column; gap: 6px; }
+        .form-group.full { grid-column: 1 / -1; }
+        label { font-size: 0.85rem; font-weight: 600; color: rgba(255,255,255,0.8); }
+        input, select, textarea { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 12px 16px; color: white; font-size: 0.95rem; width: 100%; transition: border-color 0.2s; font-family: inherit; }
+        input::placeholder, textarea::placeholder { color: rgba(255,255,255,0.35); }
+        input:focus, select:focus, textarea:focus { outline: none; border-color: var(--accent); }
+        select option { background: var(--dark); color: white; }
+        textarea { resize: vertical; min-height: 110px; }
+        .form-submit { margin-top: 8px; width: 100%; padding: 16px; background: var(--primary); color: white; border: none; border-radius: var(--radius); font-weight: 700; font-size: 1.05rem; cursor: pointer; transition: background 0.2s; }
+        .form-submit:hover { background: var(--primary-dark); }
+        .form-note { text-align: center; font-size: 0.82rem; color: rgba(255,255,255,0.45); margin-top: 14px; }
+
+        /* FOOTER */
+        footer { background: var(--dark); color: rgba(255,255,255,0.5); text-align: center; padding: 36px 24px; font-size: 0.87rem; }
+        footer strong { color: rgba(255,255,255,0.8); }
+
+        /* RESPONSIVE */
+        @media (max-width: 640px) {
+            .nav-links { display: none; }
+            .form-grid { grid-template-columns: 1fr; }
+            .contact-form { padding: 28px 20px; }
+            .pricing-card.featured { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-inner">
+        <a href="#" class="nav-logo">
+            <div class="nav-logo-icon">&#127909;</div>
+            <span class="nav-logo-text">RehabCam</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a href="#pricing" class="nav-cta">Start Free Trial</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            HIPAA-Compliant Telehealth Platform
+        </div>
+        <h1>Monitor Your Recovery<br><span>From Home</span></h1>
+        <p class="hero-sub">AI-powered video monitoring that lets your physical therapist track your exercises, form, and progress between appointments — so you heal faster and avoid re-injury.</p>
+        <div class="hero-actions">
+            <a href="#pricing" class="btn-primary">Start Your Free 14-Day Trial</a>
+            <a href="#how-it-works" class="btn-outline">See How It Works</a>
+        </div>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <span class="hero-stat-num">3.2x</span>
+                <span class="hero-stat-label">Faster Recovery</span>
+            </div>
+            <div class="hero-stat">
+                <span class="hero-stat-num">94%</span>
+                <span class="hero-stat-label">Patient Satisfaction</span>
+            </div>
+            <div class="hero-stat">
+                <span class="hero-stat-num">68%</span>
+                <span class="hero-stat-label">Fewer Re-Injuries</span>
+            </div>
+            <div class="hero-stat">
+                <span class="hero-stat-num">12k+</span>
+                <span class="hero-stat-label">Active Patients</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works" id="how-it-works">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-label">Simple Setup</div>
+            <h2 class="section-title">Up and Running in Under 10 Minutes</h2>
+            <p class="section-sub">No specialized equipment required. Just your smartphone or laptop camera and an internet connection.</p>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <h3>Your Therapist Sets Your Plan</h3>
+                <p>Your physical therapist prescribes your home exercise program inside RehabCam — with video demonstrations, rep counts, and form cues tailored to your condition.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <h3>You Exercise — Camera Watches Your Form</h3>
+                <p>Open RehabCam on your phone or laptop, start your session, and follow the on-screen prompts. The AI tracks your joints in real time and alerts you to form errors before they cause harm.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <h3>AI Logs Every Rep and Metric</h3>
+                <p>Range of motion, rep quality, completion rate, pain ratings, and session notes are automatically logged — no paper journals, no guesswork.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <h3>Therapist Reviews Data Between Visits</h3>
+                <p>Your PT gets a full dashboard of your between-appointment activity. They can message you adjustments, flag concerns, and update your plan without a full visit.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-label">Platform Features</div>
+            <h2 class="section-title">Everything You Need for a Full Recovery</h2>
+            <p class="section-sub">Built for patients and clinicians alike — every feature designed to close the gap between clinic visits.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">&#127756;</div>
+                <h3>Live Session Monitoring</h3>
+                <p>Conduct live video sessions with your therapist watching in real time. Get instant verbal feedback on your form just like an in-clinic appointment — from your living room.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#129504;</div>
+                <h3>AI Form Analysis</h3>
+                <p>Computer vision tracks 33 body landmarks per frame. The system detects compensatory movements, limited range of motion, and unsafe loading patterns before they become setbacks.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128200;</div>
+                <h3>Progress Tracking Dashboard</h3>
+                <p>Visual charts of your range of motion, strength assessments, and functional scores over time. See your recovery in data — and stay motivated with clear milestones.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128203;</div>
+                <h3>Exercise Form Feedback</h3>
+                <p>Each exercise includes video demonstration, target range markers, and real-time posture overlay. A score is given for every rep so you know exactly how you're doing.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128241;</div>
+                <h3>Secure Therapist Messaging</h3>
+                <p>HIPAA-compliant direct messaging between patient and therapist. Share session clips, ask questions, and receive updated instructions — all in one secure thread.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128276;</div>
+                <h3>Smart Reminders & Adherence</h3>
+                <p>Customizable reminders that adapt to your schedule. Adherence reports help therapists identify patients who need a check-in before they fall off their recovery plan.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128196;</div>
+                <h3>Auto-Generated Session Reports</h3>
+                <p>Each session produces a structured clinical note — ready to attach to your medical record or share with your insurance provider for home therapy reimbursement documentation.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#127963;</div>
+                <h3>Multi-Patient Clinic Dashboard</h3>
+                <p>For PT clinics — manage up to 25 active patients from one portal. Review all session logs, flag at-risk patients, and conduct live check-ins without juggling separate apps.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128274;</div>
+                <h3>HIPAA & SOC 2 Compliant</h3>
+                <p>End-to-end encrypted video and data. Business Associate Agreement available for all clinic accounts. Patient data never sold or used for training without explicit consent.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section style="background: var(--bg);">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-label">Patient Stories</div>
+            <h2 class="section-title">Real Recoveries. Real Results.</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"After my ACL surgery, getting to the PT clinic three times a week wasn't realistic. RehabCam let me do my home exercises with actual clinical oversight. My therapist caught a compensatory hip shift on week 2 that I never would have known about. Cleared for sport in 6 months — faster than my surgeon expected."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">M</div>
+                    <div>
+                        <strong>Marcus T.</strong>
+                        <span>ACL Reconstruction — 26 years old</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"I manage a PT clinic with two locations. RehabCam changed our entire home exercise program workflow. Our therapists spend less time chasing down compliance and more time on the patients who actually need hands-on care. Our re-injury rate dropped 40% in the first quarter."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">D</div>
+                    <div>
+                        <strong>Dr. Dana Rivera, DPT</strong>
+                        <span>Physical Therapy Clinic Director</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"I had a rotator cuff repair at 62. My kids were worried about me exercising alone at home, and honestly so was I. The live monitoring sessions with my PT gave me confidence I was doing things right. The progress charts kept me motivated when recovery felt slow."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">P</div>
+                    <div>
+                        <strong>Patricia W.</strong>
+                        <span>Rotator Cuff Repair — 62 years old</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section" id="pricing">
+    <div class="container">
+        <div class="section-header" style="text-align: center;">
+            <div class="section-label">Transparent Pricing</div>
+            <h2 class="section-title">Simple Plans, No Surprises</h2>
+            <p class="section-sub" style="margin: 0 auto;">14-day free trial on all plans. Cancel anytime. No long-term contracts.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="plan-name">Basic</div>
+                <div class="plan-price">$49<span>/mo</span></div>
+                <div class="plan-desc">For individual patients managing their own home recovery</div>
+                <ul class="plan-features">
+                    <li>Unlimited guided exercise sessions</li>
+                    <li>AI form analysis (all exercises)</li>
+                    <li>Progress dashboard & charts</li>
+                    <li>Exercise library (200+ exercises)</li>
+                    <li>Session history &amp; reports (90 days)</li>
+                    <li>Email &amp; chat support</li>
+                    <li>iOS &amp; Android apps</li>
+                </ul>
+                <button class="plan-btn plan-btn-outline">Start Free Trial</button>
+            </div>
+            <div class="pricing-card featured">
+                <div class="plan-badge">Most Popular</div>
+                <div class="plan-name">Pro</div>
+                <div class="plan-price">$99<span>/mo</span></div>
+                <div class="plan-desc">Patient + full therapist portal access for collaborative care</div>
+                <ul class="plan-features">
+                    <li>Everything in Basic</li>
+                    <li>Therapist portal (1 therapist)</li>
+                    <li>Live video sessions (4/mo included)</li>
+                    <li>Direct secure messaging</li>
+                    <li>Custom program prescription by PT</li>
+                    <li>Clinical session notes (auto-generated)</li>
+                    <li>Unlimited session history</li>
+                    <li>Insurance documentation exports</li>
+                </ul>
+                <button class="plan-btn plan-btn-primary">Start Free Trial</button>
+            </div>
+            <div class="pricing-card">
+                <div class="plan-name">Clinic</div>
+                <div class="plan-price">$199<span>/mo</span></div>
+                <div class="plan-desc">For PT clinics managing multiple patients under one roof</div>
+                <ul class="plan-features">
+                    <li>Everything in Pro</li>
+                    <li>Up to 25 active patients</li>
+                    <li>Unlimited therapist seats</li>
+                    <li>Multi-patient clinic dashboard</li>
+                    <li>Live sessions (unlimited)</li>
+                    <li>At-risk patient flagging &amp; alerts</li>
+                    <li>BAA for HIPAA compliance</li>
+                    <li>Priority phone support</li>
+                    <li>Onboarding &amp; training call included</li>
+                </ul>
+                <button class="plan-btn plan-btn-outline">Contact Sales</button>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top: 32px; font-size: 0.88rem; color: var(--muted);">All prices in USD. Additional patients on Clinic plan: $7/patient/mo. Volume discounts available for 50+ patient clinics.</p>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+    <div class="container">
+        <div class="section-header" style="text-align: center;">
+            <div class="section-label">Common Questions</div>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    What equipment do I need to use RehabCam?
+                    <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-a"><div class="faq-a-inner">No special equipment is required. RehabCam works on any smartphone, tablet, or laptop with a front-facing camera. For best form-tracking results, we recommend propping your device at an angle where your full body is visible during exercises. A standard phone stand (under $15) works perfectly. The app guides you through positioning before each session.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    Is RehabCam covered by health insurance?
+                    <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-a"><div class="faq-a-inner">Coverage varies by insurer. Many major insurance plans now cover telehealth physical therapy services, and some HSA/FSA accounts accept RehabCam subscriptions. The Pro and Clinic plans generate insurance-ready documentation that you can submit to your provider. We recommend checking with your insurance company using CPT codes 97110 (therapeutic exercises) and 98967 (telehealth). Our support team can provide a detailed benefit verification checklist.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    How accurate is the AI form analysis?
+                    <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-a"><div class="faq-a-inner">Our pose estimation model tracks 33 body landmarks at 30 frames per second and has been validated against clinical goniometry measurements with a mean absolute error under 4.2 degrees for major joint angles. It performs reliably in normal home lighting conditions. It is designed as a clinical-grade monitoring assistant — your therapist always has final clinical authority. The AI flags potential form issues; your therapist interprets them.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    Is my video and health data secure?
+                    <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-a"><div class="faq-a-inner">Yes. RehabCam is fully HIPAA compliant. All video streams are end-to-end encrypted. Session recordings are stored in encrypted cloud storage and accessible only to you and your designated therapist. Clinic plans include a signed Business Associate Agreement (BAA). We undergo annual SOC 2 Type II audits. Your data is never sold or used to train AI models without explicit written consent.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    Can I use RehabCam without a therapist?
+                    <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-a"><div class="faq-a-inner">Yes — the Basic plan is designed for self-directed patients who want AI-guided exercise sessions and progress tracking without therapist oversight. You select your condition, and RehabCam generates a standard evidence-based exercise program. However, we always recommend working with a licensed physical therapist, especially post-surgery. The Pro plan connects you with therapist review for safer, faster outcomes.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    What happens after my free trial ends?
+                    <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-a"><div class="faq-a-inner">After your 14-day free trial, you'll be automatically enrolled in the plan you selected at signup. We send reminder emails at day 10 and day 13. You can cancel at any time from your account settings — no cancellation fees, no retention calls. If you cancel, your data is retained for 90 days so you can export session records before deletion.</div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+    <div class="container" style="text-align: center;">
+        <div class="section-label" style="color: var(--accent);">Get In Touch</div>
+        <h2 class="section-title">Ready to Start Your Recovery?</h2>
+        <p class="section-sub" style="margin: 0 auto 48px;">Questions about your specific condition, clinic pricing, or insurance? Our team responds within 1 business day.</p>
+        <div class="contact-form">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" placeholder="Sarah">
+                </div>
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Johnson">
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="sarah@example.com">
+                </div>
+                <div class="form-group">
+                    <label>I am a...</label>
+                    <select>
+                        <option value="">Select one</option>
+                        <option>Patient seeking recovery support</option>
+                        <option>Physical therapist / clinician</option>
+                        <option>PT clinic owner / director</option>
+                        <option>Insurance / benefits manager</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group full">
+                    <label>How can we help?</label>
+                    <textarea placeholder="Tell us about your recovery goal, condition, or question..."></textarea>
+                </div>
+            </div>
+            <button class="form-submit">Send Message</button>
+            <p class="form-note">We respond within 1 business day. HIPAA-compliant communications.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 <strong>RehabCam</strong>. All rights reserved. | HIPAA Compliant | SOC 2 Type II Certified</p>
+    <p style="margin-top: 8px;">Not a substitute for in-person medical care. Always follow your licensed healthcare provider's guidance.</p>
+</footer>
+
+<script>
+    function toggleFaq(btn) {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+    }
+</script>
+</body>
+</html>
